@@ -1,0 +1,6 @@
+---
+# tasks file for test
+
+- name: Host OS version
+  debug:
+      msg: "{{ ansible_hostname }} is running windows version {{ ansible_distribution_version }}"

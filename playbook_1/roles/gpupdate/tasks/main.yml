@@ -1,0 +1,11 @@
+---
+# tasks file for gpupdate
+- name: Running gpupdate
+  win_command: gpupdate /force /sync /boot /target:computer
+
+- name: Check for connection
+  wait_for_connection:
+    connect_timeout: 20
+    delay: 70
+    sleep: 5
+    timeout: 600
