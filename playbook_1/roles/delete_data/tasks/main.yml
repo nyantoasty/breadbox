@@ -1,0 +1,7 @@
+---
+# tasks file for delete_data'
+
+- name: Remove files
+  win_file:
+    path: C:\Temp\ansbl_copy
+    state: absent

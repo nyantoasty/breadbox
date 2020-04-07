@@ -1,0 +1,40 @@
+---
+# tasks file for sas_update
+
+- name: "Ensure SAS license is up to date"
+  win_lineinfile:
+    path: C:\Program Files\SASHome\SASFoundation\9.4\setinit.log
+    line: "Expiration:   30NOV2020."
+    state: present
+  check_mode: yes
+  register: conf
+  failed_when: (conf is failed)
+
+- block:
+
+  - name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+    win_copy:
+      src: SAS94_9C8R3R_70138817_Win_X64_Wrkstn.txt
+      dest: C:\Temp\ansbl_copy\
+    register: create_license
+
+  - name: Does SAS exist
+    win_stat:
+      path: '"C:\Program Files\SASHome\SASRenewalUtility\9.4\SASRenew.exe"'
+    register: SAS_Installed
+
+  - name: Update Sas License
+    win_command: '"C:\Program Files\SASHome\SASRenewalUtility\9.4\SASRenew.exe" -s "datafile:c:\temp\ansbl_copy\SAS94_9C8R3R_70138817_Win_X64_Wrkstn.txt"'
+    when: create_license.changed and SAS_Installed.stat.exists
+
+  - name: Missing SAS
+    debug:
+      msg: SASRenew.exe Not Found
+    when: SAS_Installed.stat.exists == False
+
+  when: conf.changed
+
+- name: Remove files
+  win_file:
+    path: C:\Temp\ansbl_copy
+    state: absent

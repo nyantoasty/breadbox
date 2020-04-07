@@ -3,6 +3,17 @@ ansible_connection=winrm
 ansible_winrm_transport=ntlm
 ansible_port=5985
 
+[sastest]
+SHB-3-29
+SHB-2-83
+SHB-3-223
+SHB-3-117
+SHB-3-100
+SHB-3-98
+SHB-3-102
+SHB-3-97
+SHB-3-11
+
 [testgroup]
 SHB-1-23
 SHB-2-157
