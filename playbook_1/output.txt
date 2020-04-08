@@ -1,0 +1,1298 @@
+
+PLAY [all] ******************************************************************************************************************
+
+TASK [Gathering Facts] ******************************************************************************************************
+ok: [SHB-1-62]
+ok: [SHB-1-64]
+ok: [SHB-1-63]
+ok: [SHB-1-61]
+ok: [SHB-1-59]
+ok: [SHB-1-65]
+ok: [SHB-1-68]
+ok: [SHB-1-66]
+ok: [SHB-1-67]
+ok: [SHB-1-69]
+ok: [SHB-1-70]
+ok: [SHB-1-72]
+ok: [SHB-1-74]
+fatal: [SHB-1-77]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-1-75]
+ok: [SHB-1-71]
+fatal: [SHB-1-81]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+fatal: [SHB-1-82]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-1-76]
+ok: [SHB-1-78]
+fatal: [SHB-1-85]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-1-80]
+fatal: [SHB-1-86]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-1-83]
+ok: [SHB-1-88]
+ok: [SHB-1-87]
+ok: [SHB-1-84]
+ok: [SHB-1-91]
+ok: [SHB-1-90]
+ok: [SHB-1-92]
+ok: [SHB-1-93]
+ok: [SHB-1-34]
+ok: [SHB-1-35]
+ok: [SHB-1-36]
+ok: [SHB-1-37]
+ok: [SHB-1-38]
+ok: [SHB-1-39]
+ok: [SHB-1-40]
+ok: [SHB-1-41]
+ok: [SHB-1-56]
+ok: [SHB-1-54]
+ok: [SHB-1-17]
+ok: [SHB-1-14]
+ok: [SHB-1-15]
+ok: [SHB-1-11]
+fatal: [SHB-1-89]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-1-89', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2fb0290>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-1-13]
+ok: [SHB-1-12]
+ok: [SHB-2-134]
+ok: [SHB-2-83]
+ok: [SHB-3-220]
+ok: [SHB-3-222]
+ok: [SHB-3-223]
+ok: [SHB-3-235]
+ok: [SHB-3-117]
+ok: [SHB-3-100]
+ok: [SHB-3-98]
+ok: [SHB-3-97]
+ok: [SHB-3-102]
+ok: [SHB-3-11]
+ok: [SHB-3-101]
+ok: [SHB-3-19]
+ok: [SHB-3-99]
+ok: [SHB-3-60]
+ok: [BTB-3-160]
+ok: [SHB-3-61]
+fatal: [SHB-1-250]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-1-250', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2dc8850>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-62]
+fatal: [SHB-3-67]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-63]
+ok: [SHB-3-64]
+ok: [SHB-3-66]
+ok: [SHB-3-69]
+ok: [SHB-3-68]
+fatal: [SHB-3-73]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-73', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2bf3450>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+ok: [SHB-3-70]
+ok: [SHB-3-71]
+ok: [SHB-3-72]
+ok: [SHB-3-74]
+ok: [SHB-3-75]
+ok: [SHB-3-76]
+ok: [SHB-3-77]
+ok: [SHB-3-78]
+ok: [SHB-3-79]
+ok: [SHB-3-82]
+fatal: [SHB-1-79]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"setup": {"exception": "Call was canceled by the message filter. \r\nAt line:63 char:44\r\n+ ... e_name] = $(Get-CimInstance -Namespace $namespace -ClassName $instanc ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (Root\\CIMV2:Win3...erConfiguration:String) [Get-CimInstance], CimException\r\n    + FullyQualifiedErrorId : HRESULT 0x80010002,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand\r\n\r\nScriptStackTrace:\r\nat Get-LazyCimInstance, <No file>: line 63\r\nat <ScriptBlock>, <No file>: line 142\r\n\r\nMicrosoft.Management.Infrastructure.CimException: Call was canceled by the message filter. \r\n   at Microsoft.Management.Infrastructure.Internal.Operations.CimAsyncObserverProxyBase`1.ProcessNativeCallback(OperationCallbackProcessingContext callbackProcessingContext, T currentItem, Boolean moreResults, MiResult operationResult, String errorMessage, InstanceHandle errorDetailsHandle)", "failed": true, "msg": "Unhandled exception while executing module: Call was canceled by the message filter. "}}, "msg": "The following modules failed to execute: setup\n"}
+fatal: [SHB-3-85]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-84]
+ok: [SHB-3-86]
+ok: [SHB-3-87]
+ok: [SHB-3-89]
+ok: [SHB-3-88]
+ok: [SHB-3-90]
+ok: [SHB-3-91]
+fatal: [SHB-3-93]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-92]
+ok: [SHB-3-94]
+fatal: [SHB-3-80]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-80', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2da4990>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-95]
+ok: [SHB-3-118]
+fatal: [SHB-3-81]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-81', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2b022d0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-83]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-83', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2b177d0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-162]
+ok: [SHB-3-163]
+ok: [SHB-3-164]
+ok: [SHB-3-165]
+fatal: [SHB-3-24]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+fatal: [SHB-3-20]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-20', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2a66090>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-21]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-21', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29d0210>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-22]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-22', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29e06d0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-23]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-23', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29f5110>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-29]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-29', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2994090>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-33]
+ok: [SHB-3-38]
+fatal: [SHB-3-30]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-30', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2a17910>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-31]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-31', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2a23bd0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-32]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-32', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29f3750>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-35]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-35', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29f3ed0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-40]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-40', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29875d0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-45]
+fatal: [SHB-3-46]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+fatal: [SHB-3-41]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-41', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29b84d0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-42]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-42', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29f3c90>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-43]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-43', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29a9b90>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-55]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-55', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2956b50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+fatal: [SHB-3-44]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-44', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2c9ba50>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-52]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-52', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f294ae10>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-104]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-104', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2950490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+fatal: [SHB-3-53]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-53', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2949f90>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-54]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-54', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f294e610>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-96]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-96', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29587d0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+fatal: [SHB-3-108]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-108', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2949650>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+fatal: [SHB-3-103]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-103', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29f4650>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-106]
+ok: [SHB-3-110]
+fatal: [SHB-3-112]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-111]
+ok: [SHB-3-113]
+fatal: [SHB-3-158]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-158', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f28d6790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+fatal: [SHB-3-105]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-105', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f29595d0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-160]
+ok: [SHB-3-161]
+ok: [SHB-3-15]
+fatal: [SHB-3-107]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-107', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f2968390>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-16]
+fatal: [SHB-3-109]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-109', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f295d110>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-17]
+ok: [SHB-3-18]
+ok: [SHB-3-25]
+fatal: [SHB-3-114]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-114', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f28c00d0>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-26]
+ok: [SHB-3-27]
+ok: [SHB-3-28]
+ok: [SHB-3-34]
+fatal: [SHB-3-159]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-159', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f28d4d10>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+ok: [SHB-3-37]
+fatal: [SHB-3-50]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-39]
+ok: [SHB-3-47]
+ok: [SHB-3-48]
+ok: [SHB-3-51]
+ok: [SHB-3-49]
+ok: [SHB-3-189]
+ok: [SHB-3-190]
+ok: [SHB-3-191]
+ok: [SHB-3-192]
+ok: [SHB-3-193]
+ok: [SHB-3-194]
+fatal: [SHB-3-199]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-195]
+ok: [SHB-3-196]
+ok: [SHB-3-198]
+ok: [SHB-3-197]
+ok: [SHB-3-200]
+ok: [SHB-3-201]
+ok: [SHB-3-202]
+ok: [SHB-3-203]
+ok: [SHB-3-204]
+fatal: [SHB-3-209]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-206]
+ok: [SHB-3-205]
+fatal: [SHB-3-212]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-207]
+ok: [SHB-3-208]
+ok: [SHB-3-210]
+fatal: [SHB-3-215]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-211]
+fatal: [SHB-3-226]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-213]
+ok: [SHB-3-214]
+fatal: [SHB-2-92]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-3-217]
+ok: [SHB-3-216]
+fatal: [SHB-2-94]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-2-157]
+ok: [SHB-2-91]
+ok: [SHB-2-93]
+ok: [SHB-2-95]
+ok: [SHB-2-96]
+ok: [SHB-2-97]
+ok: [SHB-2-98]
+fatal: [SHB-2-103]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-2-99]
+ok: [SHB-2-100]
+ok: [SHB-2-101]
+ok: [SHB-2-105]
+ok: [SHB-2-102]
+fatal: [SHB-2-110]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+ok: [SHB-2-106]
+ok: [SHB-2-107]
+ok: [SHB-2-108]
+ok: [SHB-2-109]
+ok: [SHB-2-111]
+ok: [SHB-2-112]
+fatal: [SHB-2-117]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-2-117', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f241f3d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+ok: [SHB-2-113]
+ok: [SHB-2-114]
+ok: [SHB-2-115]
+ok: [SHB-2-118]
+ok: [SHB-2-116]
+ok: [SHB-2-119]
+ok: [SHB-2-127]
+ok: [SHB-2-128]
+ok: [SHB-2-129]
+ok: [BTB-3-159]
+ok: [BTB-3-145]
+ok: [BTB-3-146]
+ok: [BTB-3-147]
+ok: [BTB-3-148]
+ok: [BTB-3-149]
+ok: [BTB-3-151]
+ok: [BTB-3-150]
+ok: [BTB-3-152]
+ok: [BTB-3-153]
+ok: [BTB-3-154]
+ok: [BTB-3-156]
+ok: [BTB-3-155]
+ok: [BTB-3-157]
+ok: [BTB-3-158]
+ok: [BTB-3-161]
+ok: [BTB-3-163]
+ok: [BTB-3-162]
+ok: [SHB-1-23]
+ok: [SHB-1-24]
+ok: [SHB-1-25]
+ok: [SHB-1-26]
+ok: [SHB-1-27]
+
+TASK [sas_update : Ensure SAS license is up to date] ************************************************************************
+fatal: [SHB-1-62]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-63]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-59]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-64]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-61]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-68]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-65]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-66]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-67]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-69]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-75]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-70]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-72]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-74]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-76]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-78]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-80]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-83]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-88]: UNREACHABLE! => {"changed": false, "msg": "ntlm: the specified credentials were rejected by the server", "unreachable": true}
+fatal: [SHB-1-71]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-84]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-87]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-90]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-91]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-92]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-93]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-1-35]
+fatal: [SHB-1-36]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-1-34]
+fatal: [SHB-1-37]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-39]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-1-38]
+changed: [SHB-1-40]
+ok: [SHB-1-41]
+fatal: [SHB-1-56]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-54]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-17]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-14]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-15]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-11]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-1-12]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-1-13]
+fatal: [SHB-2-134]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-2-83]
+changed: [SHB-3-220]
+fatal: [SHB-3-222]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-235]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-3-223]
+ok: [SHB-3-117]
+ok: [SHB-3-100]
+ok: [SHB-3-98]
+ok: [SHB-3-97]
+ok: [SHB-3-11]
+fatal: [SHB-3-19]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-3-101]
+changed: [SHB-3-99]
+changed: [BTB-3-160]
+changed: [SHB-3-60]
+changed: [SHB-3-61]
+ok: [SHB-3-62]
+ok: [SHB-3-63]
+changed: [SHB-3-64]
+changed: [SHB-3-66]
+changed: [SHB-3-68]
+changed: [SHB-3-70]
+changed: [SHB-3-69]
+changed: [SHB-3-71]
+ok: [SHB-3-72]
+changed: [SHB-3-74]
+changed: [SHB-3-75]
+changed: [SHB-3-76]
+fatal: [SHB-3-77]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-3-78]
+changed: [SHB-3-79]
+fatal: [SHB-3-82]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-3-84]
+changed: [SHB-3-86]
+changed: [SHB-3-87]
+changed: [SHB-3-88]
+changed: [SHB-3-89]
+changed: [SHB-3-90]
+changed: [SHB-3-91]
+changed: [SHB-3-92]
+changed: [SHB-3-94]
+changed: [SHB-3-95]
+fatal: [SHB-3-118]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-3-162]
+changed: [SHB-3-163]
+changed: [SHB-3-164]
+changed: [SHB-3-165]
+ok: [SHB-3-33]
+fatal: [SHB-3-45]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-3-38]
+fatal: [SHB-3-106]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-110]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-3-111]
+fatal: [SHB-3-113]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-160]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-161]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-3-15]
+changed: [SHB-3-16]
+changed: [SHB-3-17]
+changed: [SHB-3-18]
+fatal: [SHB-3-25]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-3-26]
+fatal: [SHB-3-27]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-28]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-3-34]
+changed: [SHB-3-37]
+ok: [SHB-3-39]
+ok: [SHB-3-47]
+ok: [SHB-3-48]
+ok: [SHB-3-49]
+changed: [SHB-3-51]
+changed: [SHB-3-189]
+ok: [SHB-3-190]
+changed: [SHB-3-191]
+changed: [SHB-3-192]
+ok: [SHB-3-193]
+changed: [SHB-3-194]
+changed: [SHB-3-195]
+fatal: [SHB-3-102]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='shb-3-102', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87f28da510>: Failed to establish a new connection: [Errno 111] Connection refused',))", "unreachable": true}
+changed: [SHB-3-196]
+ok: [SHB-3-197]
+ok: [SHB-3-198]
+changed: [SHB-3-200]
+changed: [SHB-3-201]
+changed: [SHB-3-202]
+changed: [SHB-3-203]
+changed: [SHB-3-204]
+fatal: [SHB-3-206]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-205]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-207]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-3-208]
+fatal: [SHB-3-211]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-3-210]
+fatal: [SHB-3-213]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-214]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-216]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-3-217]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-2-157]
+ok: [SHB-2-91]
+ok: [SHB-2-93]
+ok: [SHB-2-95]
+ok: [SHB-2-97]
+ok: [SHB-2-98]
+ok: [SHB-2-96]
+fatal: [SHB-2-99]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-2-100]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-2-101]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-2-105]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-2-102]
+ok: [SHB-2-106]
+fatal: [SHB-2-107]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-2-108]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-2-109]
+ok: [SHB-2-111]
+ok: [SHB-2-112]
+fatal: [SHB-2-113]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+fatal: [SHB-2-114]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-2-115]
+ok: [SHB-2-116]
+ok: [SHB-2-118]
+changed: [SHB-2-119]
+fatal: [SHB-2-127]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+ok: [SHB-2-128]
+ok: [SHB-2-129]
+changed: [BTB-3-145]
+changed: [BTB-3-159]
+changed: [BTB-3-146]
+changed: [BTB-3-147]
+changed: [BTB-3-148]
+changed: [BTB-3-149]
+changed: [BTB-3-150]
+changed: [BTB-3-151]
+changed: [BTB-3-152]
+changed: [BTB-3-153]
+changed: [BTB-3-154]
+ok: [BTB-3-155]
+changed: [BTB-3-156]
+changed: [BTB-3-157]
+changed: [BTB-3-158]
+changed: [BTB-3-161]
+changed: [BTB-3-162]
+changed: [BTB-3-163]
+fatal: [SHB-1-23]: FAILED! => {"changed": false, "failed_when_result": true, "msg": "Path C:\\Program Files\\SASHome\\SASFoundation\\9.4\\setinit.log does not exist !"}
+changed: [SHB-1-24]
+changed: [SHB-1-26]
+changed: [SHB-1-27]
+changed: [SHB-1-25]
+
+TASK [sas_update : Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)] **************************************************
+skipping: [SHB-1-41]
+skipping: [SHB-1-13]
+skipping: [SHB-2-83]
+changed: [SHB-1-38]
+skipping: [SHB-3-223]
+skipping: [SHB-3-117]
+skipping: [SHB-3-100]
+skipping: [SHB-3-98]
+skipping: [SHB-3-97]
+changed: [SHB-1-34]
+changed: [SHB-1-40]
+skipping: [SHB-3-11]
+skipping: [SHB-3-101]
+changed: [SHB-1-35]
+changed: [SHB-3-220]
+skipping: [SHB-3-62]
+skipping: [SHB-3-63]
+changed: [SHB-3-99]
+changed: [SHB-3-61]
+changed: [SHB-3-60]
+changed: [BTB-3-160]
+changed: [SHB-3-64]
+changed: [SHB-3-66]
+skipping: [SHB-3-72]
+changed: [SHB-3-68]
+changed: [SHB-3-69]
+changed: [SHB-3-70]
+changed: [SHB-3-71]
+changed: [SHB-3-74]
+changed: [SHB-3-75]
+skipping: [SHB-3-84]
+changed: [SHB-3-76]
+changed: [SHB-3-78]
+changed: [SHB-3-79]
+changed: [SHB-3-86]
+changed: [SHB-3-89]
+changed: [SHB-3-88]
+changed: [SHB-3-90]
+changed: [SHB-3-87]
+changed: [SHB-3-91]
+changed: [SHB-3-92]
+changed: [SHB-3-94]
+changed: [SHB-3-95]
+skipping: [SHB-3-33]
+changed: [SHB-3-162]
+changed: [SHB-3-163]
+changed: [SHB-3-164]
+changed: [SHB-3-165]
+changed: [SHB-3-38]
+changed: [SHB-3-111]
+changed: [SHB-3-15]
+changed: [SHB-3-16]
+changed: [SHB-3-17]
+changed: [SHB-3-18]
+skipping: [SHB-3-39]
+skipping: [SHB-3-47]
+changed: [SHB-3-26]
+skipping: [SHB-3-48]
+skipping: [SHB-3-49]
+skipping: [SHB-3-190]
+changed: [SHB-3-37]
+changed: [SHB-3-34]
+skipping: [SHB-3-193]
+changed: [SHB-3-51]
+changed: [SHB-3-191]
+changed: [SHB-3-189]
+skipping: [SHB-3-197]
+skipping: [SHB-3-198]
+changed: [SHB-3-192]
+changed: [SHB-3-194]
+changed: [SHB-3-195]
+changed: [SHB-3-196]
+changed: [SHB-3-200]
+changed: [SHB-3-201]
+skipping: [SHB-3-210]
+skipping: [SHB-2-157]
+changed: [SHB-3-202]
+changed: [SHB-3-203]
+skipping: [SHB-2-91]
+skipping: [SHB-2-93]
+skipping: [SHB-2-95]
+skipping: [SHB-2-96]
+skipping: [SHB-2-97]
+skipping: [SHB-2-98]
+skipping: [SHB-2-102]
+skipping: [SHB-2-106]
+skipping: [SHB-2-109]
+skipping: [SHB-2-111]
+skipping: [SHB-2-112]
+skipping: [SHB-2-115]
+skipping: [SHB-2-116]
+skipping: [SHB-2-118]
+changed: [SHB-3-204]
+skipping: [SHB-2-128]
+changed: [SHB-3-208]
+skipping: [SHB-2-129]
+changed: [SHB-2-119]
+changed: [BTB-3-145]
+changed: [BTB-3-159]
+changed: [BTB-3-147]
+changed: [BTB-3-146]
+changed: [BTB-3-148]
+changed: [BTB-3-149]
+changed: [BTB-3-150]
+changed: [BTB-3-151]
+skipping: [BTB-3-155]
+changed: [BTB-3-152]
+changed: [BTB-3-153]
+changed: [BTB-3-157]
+changed: [BTB-3-154]
+changed: [BTB-3-156]
+changed: [BTB-3-158]
+changed: [BTB-3-161]
+changed: [SHB-1-24]
+changed: [BTB-3-163]
+changed: [BTB-3-162]
+changed: [SHB-1-25]
+changed: [SHB-1-26]
+changed: [SHB-1-27]
+
+TASK [sas_update : Does SAS exist] ******************************************************************************************
+skipping: [SHB-1-41]
+skipping: [SHB-1-13]
+skipping: [SHB-2-83]
+ok: [SHB-1-34]
+ok: [SHB-1-40]
+ok: [SHB-1-38]
+skipping: [SHB-3-223]
+skipping: [SHB-3-117]
+skipping: [SHB-3-100]
+skipping: [SHB-3-98]
+skipping: [SHB-3-97]
+skipping: [SHB-3-11]
+ok: [SHB-3-220]
+skipping: [SHB-3-101]
+ok: [SHB-1-35]
+skipping: [SHB-3-62]
+skipping: [SHB-3-63]
+ok: [SHB-3-61]
+ok: [SHB-3-60]
+ok: [BTB-3-160]
+ok: [SHB-3-99]
+ok: [SHB-3-64]
+ok: [SHB-3-66]
+skipping: [SHB-3-72]
+ok: [SHB-3-69]
+ok: [SHB-3-68]
+ok: [SHB-3-71]
+ok: [SHB-3-70]
+ok: [SHB-3-74]
+skipping: [SHB-3-84]
+ok: [SHB-3-76]
+ok: [SHB-3-78]
+ok: [SHB-3-75]
+ok: [SHB-3-79]
+ok: [SHB-3-86]
+ok: [SHB-3-88]
+ok: [SHB-3-87]
+ok: [SHB-3-89]
+ok: [SHB-3-90]
+ok: [SHB-3-91]
+ok: [SHB-3-92]
+ok: [SHB-3-95]
+ok: [SHB-3-94]
+skipping: [SHB-3-33]
+ok: [SHB-3-162]
+ok: [SHB-3-163]
+ok: [SHB-3-38]
+ok: [SHB-3-164]
+ok: [SHB-3-165]
+ok: [SHB-3-111]
+ok: [SHB-3-15]
+ok: [SHB-3-26]
+ok: [SHB-3-17]
+skipping: [SHB-3-39]
+ok: [SHB-3-18]
+skipping: [SHB-3-47]
+ok: [SHB-3-16]
+skipping: [SHB-3-48]
+skipping: [SHB-3-49]
+skipping: [SHB-3-190]
+ok: [SHB-3-34]
+ok: [SHB-3-37]
+skipping: [SHB-3-193]
+ok: [SHB-3-51]
+ok: [SHB-3-189]
+ok: [SHB-3-191]
+skipping: [SHB-3-197]
+skipping: [SHB-3-198]
+ok: [SHB-3-192]
+ok: [SHB-3-194]
+ok: [SHB-3-195]
+ok: [SHB-3-196]
+ok: [SHB-3-200]
+ok: [SHB-3-201]
+skipping: [SHB-3-210]
+skipping: [SHB-2-157]
+skipping: [SHB-2-91]
+ok: [SHB-3-203]
+ok: [SHB-3-202]
+skipping: [SHB-2-93]
+skipping: [SHB-2-95]
+skipping: [SHB-2-96]
+skipping: [SHB-2-97]
+ok: [SHB-3-204]
+skipping: [SHB-2-98]
+skipping: [SHB-2-102]
+skipping: [SHB-2-106]
+skipping: [SHB-2-109]
+skipping: [SHB-2-111]
+skipping: [SHB-2-112]
+skipping: [SHB-2-115]
+skipping: [SHB-2-116]
+skipping: [SHB-2-118]
+skipping: [SHB-2-128]
+skipping: [SHB-2-129]
+ok: [SHB-3-208]
+ok: [SHB-2-119]
+ok: [BTB-3-145]
+ok: [BTB-3-146]
+ok: [BTB-3-159]
+ok: [BTB-3-147]
+ok: [BTB-3-149]
+ok: [BTB-3-148]
+ok: [BTB-3-151]
+ok: [BTB-3-150]
+skipping: [BTB-3-155]
+ok: [BTB-3-152]
+ok: [BTB-3-153]
+ok: [BTB-3-157]
+ok: [BTB-3-156]
+ok: [BTB-3-154]
+ok: [BTB-3-158]
+ok: [SHB-1-24]
+ok: [BTB-3-161]
+ok: [BTB-3-162]
+ok: [BTB-3-163]
+ok: [SHB-1-25]
+ok: [SHB-1-27]
+ok: [SHB-1-26]
+
+TASK [sas_update : Update Sas License] **************************************************************************************
+skipping: [SHB-1-41]
+skipping: [SHB-1-13]
+skipping: [SHB-2-83]
+changed: [SHB-1-40]
+changed: [SHB-1-34]
+skipping: [SHB-3-223]
+changed: [SHB-1-35]
+changed: [SHB-1-38]
+skipping: [SHB-3-117]
+skipping: [SHB-3-100]
+changed: [SHB-3-220]
+skipping: [SHB-3-98]
+skipping: [SHB-3-97]
+skipping: [SHB-3-101]
+skipping: [SHB-3-11]
+skipping: [SHB-3-62]
+skipping: [SHB-3-63]
+changed: [SHB-3-60]
+changed: [SHB-3-99]
+changed: [SHB-3-61]
+changed: [BTB-3-160]
+changed: [SHB-3-64]
+changed: [SHB-3-66]
+changed: [SHB-3-68]
+skipping: [SHB-3-72]
+changed: [SHB-3-69]
+changed: [SHB-3-71]
+changed: [SHB-3-70]
+changed: [SHB-3-74]
+skipping: [SHB-3-84]
+changed: [SHB-3-75]
+changed: [SHB-3-76]
+changed: [SHB-3-78]
+changed: [SHB-3-79]
+changed: [SHB-3-86]
+changed: [SHB-3-87]
+changed: [SHB-3-88]
+changed: [SHB-3-90]
+changed: [SHB-3-89]
+changed: [SHB-3-91]
+changed: [SHB-3-92]
+changed: [SHB-3-94]
+changed: [SHB-3-95]
+skipping: [SHB-3-33]
+changed: [SHB-3-162]
+changed: [SHB-3-163]
+changed: [SHB-3-165]
+changed: [SHB-3-164]
+changed: [SHB-3-38]
+changed: [SHB-3-111]
+changed: [SHB-3-15]
+changed: [SHB-3-17]
+changed: [SHB-3-16]
+skipping: [SHB-3-39]
+skipping: [SHB-3-47]
+changed: [SHB-3-18]
+skipping: [SHB-3-48]
+skipping: [SHB-3-49]
+changed: [SHB-3-26]
+skipping: [SHB-3-190]
+changed: [SHB-3-34]
+changed: [SHB-3-37]
+skipping: [SHB-3-193]
+changed: [SHB-3-51]
+changed: [SHB-3-189]
+changed: [SHB-3-191]
+skipping: [SHB-3-197]
+skipping: [SHB-3-198]
+changed: [SHB-3-192]
+changed: [SHB-3-194]
+changed: [SHB-3-195]
+changed: [SHB-3-200]
+changed: [SHB-3-196]
+changed: [SHB-3-201]
+skipping: [SHB-3-210]
+skipping: [SHB-2-157]
+skipping: [SHB-2-91]
+skipping: [SHB-2-93]
+changed: [SHB-3-202]
+skipping: [SHB-2-95]
+skipping: [SHB-2-96]
+changed: [SHB-3-203]
+skipping: [SHB-2-97]
+skipping: [SHB-2-98]
+skipping: [SHB-2-102]
+skipping: [SHB-2-106]
+skipping: [SHB-2-109]
+skipping: [SHB-2-111]
+skipping: [SHB-2-112]
+skipping: [SHB-2-115]
+changed: [SHB-3-204]
+skipping: [SHB-2-116]
+skipping: [SHB-2-118]
+skipping: [SHB-2-128]
+skipping: [SHB-2-129]
+changed: [SHB-3-208]
+changed: [SHB-2-119]
+changed: [BTB-3-159]
+changed: [BTB-3-145]
+changed: [BTB-3-147]
+changed: [BTB-3-146]
+changed: [BTB-3-148]
+changed: [BTB-3-149]
+changed: [BTB-3-150]
+changed: [BTB-3-151]
+changed: [BTB-3-152]
+skipping: [BTB-3-155]
+changed: [BTB-3-153]
+changed: [BTB-3-157]
+changed: [BTB-3-154]
+changed: [BTB-3-156]
+changed: [BTB-3-158]
+changed: [BTB-3-161]
+changed: [BTB-3-163]
+changed: [BTB-3-162]
+changed: [SHB-1-24]
+changed: [SHB-1-25]
+changed: [SHB-1-26]
+changed: [SHB-1-27]
+
+TASK [sas_update : Missing SAS] *********************************************************************************************
+skipping: [SHB-1-34]
+skipping: [SHB-1-35]
+skipping: [SHB-1-38]
+skipping: [SHB-1-40]
+skipping: [SHB-1-41]
+skipping: [SHB-1-13]
+skipping: [SHB-3-220]
+skipping: [SHB-3-223]
+skipping: [SHB-3-117]
+skipping: [SHB-2-83]
+skipping: [SHB-3-100]
+skipping: [SHB-3-98]
+skipping: [SHB-3-97]
+skipping: [SHB-3-11]
+skipping: [SHB-3-101]
+skipping: [SHB-3-99]
+skipping: [SHB-3-60]
+skipping: [SHB-3-61]
+skipping: [SHB-3-62]
+skipping: [SHB-3-63]
+skipping: [BTB-3-160]
+skipping: [SHB-3-64]
+skipping: [SHB-3-66]
+skipping: [SHB-3-68]
+skipping: [SHB-3-69]
+skipping: [SHB-3-70]
+skipping: [SHB-3-71]
+skipping: [SHB-3-72]
+skipping: [SHB-3-74]
+skipping: [SHB-3-75]
+skipping: [SHB-3-76]
+skipping: [SHB-3-78]
+skipping: [SHB-3-79]
+skipping: [SHB-3-84]
+skipping: [SHB-3-86]
+skipping: [SHB-3-87]
+skipping: [SHB-3-88]
+skipping: [SHB-3-89]
+skipping: [SHB-3-90]
+skipping: [SHB-3-91]
+skipping: [SHB-3-92]
+skipping: [SHB-3-94]
+skipping: [SHB-3-95]
+skipping: [SHB-3-162]
+skipping: [SHB-3-163]
+skipping: [SHB-3-164]
+skipping: [SHB-3-165]
+skipping: [SHB-3-33]
+skipping: [SHB-3-38]
+skipping: [SHB-3-111]
+skipping: [SHB-3-15]
+skipping: [SHB-3-16]
+skipping: [SHB-3-17]
+skipping: [SHB-3-18]
+skipping: [SHB-3-26]
+skipping: [SHB-3-34]
+skipping: [SHB-3-37]
+skipping: [SHB-3-47]
+skipping: [SHB-3-48]
+skipping: [SHB-3-49]
+skipping: [SHB-3-39]
+skipping: [SHB-3-51]
+skipping: [SHB-3-189]
+skipping: [SHB-3-190]
+skipping: [SHB-3-191]
+skipping: [SHB-3-192]
+skipping: [SHB-3-193]
+skipping: [SHB-3-194]
+skipping: [SHB-3-195]
+skipping: [SHB-3-196]
+skipping: [SHB-3-197]
+skipping: [SHB-3-198]
+skipping: [SHB-3-200]
+skipping: [SHB-3-201]
+skipping: [SHB-3-202]
+skipping: [SHB-3-203]
+skipping: [SHB-3-204]
+skipping: [SHB-3-208]
+skipping: [SHB-3-210]
+skipping: [SHB-2-157]
+skipping: [SHB-2-91]
+skipping: [SHB-2-93]
+skipping: [SHB-2-95]
+skipping: [SHB-2-96]
+skipping: [SHB-2-97]
+skipping: [SHB-2-98]
+skipping: [SHB-2-102]
+skipping: [SHB-2-106]
+skipping: [SHB-2-109]
+skipping: [SHB-2-111]
+skipping: [SHB-2-112]
+skipping: [SHB-2-115]
+skipping: [SHB-2-116]
+skipping: [SHB-2-118]
+skipping: [SHB-2-119]
+skipping: [SHB-2-128]
+skipping: [SHB-2-129]
+skipping: [BTB-3-159]
+skipping: [BTB-3-145]
+skipping: [BTB-3-146]
+skipping: [BTB-3-147]
+skipping: [BTB-3-148]
+skipping: [BTB-3-149]
+skipping: [BTB-3-150]
+skipping: [BTB-3-151]
+skipping: [BTB-3-152]
+skipping: [BTB-3-153]
+skipping: [BTB-3-154]
+skipping: [BTB-3-155]
+skipping: [BTB-3-156]
+skipping: [BTB-3-157]
+skipping: [BTB-3-158]
+skipping: [BTB-3-161]
+skipping: [BTB-3-162]
+skipping: [BTB-3-163]
+skipping: [SHB-1-24]
+skipping: [SHB-1-25]
+skipping: [SHB-1-26]
+skipping: [SHB-1-27]
+
+TASK [sas_update : Remove files] ********************************************************************************************
+changed: [SHB-1-38]
+changed: [SHB-1-34]
+changed: [SHB-1-35]
+ok: [SHB-1-41]
+changed: [SHB-1-40]
+ok: [SHB-1-13]
+changed: [SHB-3-220]
+ok: [SHB-3-223]
+ok: [SHB-3-117]
+ok: [SHB-2-83]
+ok: [SHB-3-97]
+ok: [SHB-3-101]
+ok: [SHB-3-98]
+ok: [SHB-3-11]
+ok: [SHB-3-100]
+changed: [SHB-3-99]
+changed: [BTB-3-160]
+changed: [SHB-3-60]
+changed: [SHB-3-61]
+ok: [SHB-3-62]
+ok: [SHB-3-63]
+changed: [SHB-3-64]
+changed: [SHB-3-66]
+changed: [SHB-3-68]
+changed: [SHB-3-69]
+changed: [SHB-3-70]
+ok: [SHB-3-72]
+changed: [SHB-3-74]
+changed: [SHB-3-75]
+changed: [SHB-3-71]
+changed: [SHB-3-76]
+changed: [SHB-3-78]
+changed: [SHB-3-86]
+changed: [SHB-3-79]
+ok: [SHB-3-84]
+changed: [SHB-3-87]
+changed: [SHB-3-88]
+changed: [SHB-3-89]
+changed: [SHB-3-91]
+changed: [SHB-3-90]
+changed: [SHB-3-92]
+changed: [SHB-3-94]
+changed: [SHB-3-95]
+changed: [SHB-3-163]
+changed: [SHB-3-162]
+changed: [SHB-3-164]
+changed: [SHB-3-165]
+ok: [SHB-3-33]
+changed: [SHB-3-38]
+changed: [SHB-3-111]
+changed: [SHB-3-15]
+changed: [SHB-3-16]
+changed: [SHB-3-17]
+changed: [SHB-3-18]
+changed: [SHB-3-26]
+changed: [SHB-3-34]
+changed: [SHB-3-37]
+ok: [SHB-3-39]
+ok: [SHB-3-48]
+ok: [SHB-3-47]
+ok: [SHB-3-49]
+changed: [SHB-3-51]
+ok: [SHB-3-190]
+changed: [SHB-3-191]
+changed: [SHB-3-189]
+changed: [SHB-3-192]
+ok: [SHB-3-193]
+changed: [SHB-3-195]
+changed: [SHB-3-194]
+changed: [SHB-3-196]
+ok: [SHB-3-197]
+changed: [SHB-3-200]
+ok: [SHB-3-198]
+changed: [SHB-3-201]
+changed: [SHB-3-202]
+changed: [SHB-3-203]
+changed: [SHB-3-208]
+changed: [SHB-3-204]
+ok: [SHB-3-210]
+ok: [SHB-2-157]
+ok: [SHB-2-91]
+ok: [SHB-2-93]
+ok: [SHB-2-96]
+ok: [SHB-2-95]
+ok: [SHB-2-97]
+ok: [SHB-2-98]
+ok: [SHB-2-102]
+ok: [SHB-2-109]
+ok: [SHB-2-106]
+ok: [SHB-2-111]
+ok: [SHB-2-112]
+ok: [SHB-2-115]
+ok: [SHB-2-116]
+ok: [SHB-2-118]
+changed: [SHB-2-119]
+ok: [SHB-2-128]
+ok: [SHB-2-129]
+changed: [BTB-3-159]
+changed: [BTB-3-145]
+changed: [BTB-3-146]
+changed: [BTB-3-147]
+changed: [BTB-3-148]
+changed: [BTB-3-149]
+changed: [BTB-3-150]
+changed: [BTB-3-151]
+changed: [BTB-3-152]
+changed: [BTB-3-153]
+changed: [BTB-3-154]
+changed: [BTB-3-156]
+ok: [BTB-3-155]
+changed: [BTB-3-157]
+changed: [BTB-3-158]
+changed: [BTB-3-161]
+changed: [BTB-3-162]
+changed: [BTB-3-163]
+changed: [SHB-1-24]
+changed: [SHB-1-25]
+changed: [SHB-1-26]
+changed: [SHB-1-27]
+
+PLAY RECAP ******************************************************************************************************************
+BTB-3-145                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-146                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-147                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-148                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-149                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-150                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-151                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-152                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-153                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-154                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-155                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+BTB-3-156                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-157                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-158                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-159                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-160                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-161                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-162                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+BTB-3-163                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-11                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-12                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-13                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-1-14                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-15                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-17                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-23                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-24                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-25                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-250                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-1-26                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-27                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-34                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-35                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-36                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-37                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-38                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-39                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-40                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-1-41                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-1-54                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-56                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-59                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-61                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-62                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-63                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-64                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-65                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-66                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-67                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-68                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-69                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-70                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-71                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-72                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-74                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-75                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-76                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-77                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-1-78                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-79                   : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-80                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-81                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-1-82                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-1-83                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-84                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-85                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-1-86                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-1-87                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-88                   : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-1-89                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-1-90                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-91                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-92                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-1-93                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-100                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-101                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-102                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-103                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-2-105                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-106                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-107                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-108                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-109                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-110                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-2-111                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-112                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-113                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-114                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-115                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-116                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-117                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-2-118                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-119                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-2-127                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-128                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-129                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-134                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-2-157                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-83                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-91                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-92                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-2-93                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-94                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-2-95                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-96                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-97                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-98                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-2-99                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-100                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-101                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-102                  : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-103                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-104                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-105                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-106                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-107                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-108                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-109                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-11                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-110                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-111                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-112                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-113                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-114                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-117                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-118                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-15                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-158                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-159                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-16                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-160                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-161                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-162                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-163                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-164                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-165                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-17                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-18                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-189                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-19                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-190                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-191                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-192                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-193                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-194                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-195                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-196                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-197                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-198                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-199                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-20                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-200                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-201                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-202                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-203                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-204                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-205                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-206                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-207                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-208                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-209                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-21                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-210                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-211                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-212                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-213                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-214                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-215                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-216                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-217                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-22                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-220                  : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-222                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-223                  : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-226                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-23                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-235                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-24                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-25                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-26                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-27                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-28                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-29                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-30                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-31                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-32                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-33                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-34                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-35                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-37                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-38                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-39                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-40                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-41                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-42                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-43                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-44                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-45                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-46                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-47                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-48                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-49                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-50                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-51                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-52                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-53                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-54                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-55                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-60                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-61                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-62                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-63                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-64                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-66                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-67                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-68                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-69                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-70                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-71                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-72                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-73                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-74                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-75                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-76                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-77                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-78                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-79                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-80                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-81                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-82                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+SHB-3-83                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-84                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-85                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-86                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-87                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-88                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-89                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-90                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-91                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-92                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-93                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-94                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-95                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+SHB-3-96                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+SHB-3-97                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-98                   : ok=3    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+SHB-3-99                   : ok=6    changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+

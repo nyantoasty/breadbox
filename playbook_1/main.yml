@@ -1,4 +1,4 @@
-- hosts: sastest
+- hosts: all
   tasks: 
     
     - import_role:
