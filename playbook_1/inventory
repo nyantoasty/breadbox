@@ -3,6 +3,27 @@ ansible_connection=winrm
 ansible_winrm_transport=ntlm
 ansible_port=5985
 
+[failed]
+SHB-2-100
+SHB-2-105
+SHB-2-108
+SHB-2-114
+SHB-2-127
+SHB-3-118
+SHB-3-205
+SHB-3-206
+SHB-3-207
+SHB-3-212
+SHB-3-213
+SHB-3-215
+SHB-3-217
+SHB-3-226
+SHB-3-25
+SHB-3-27
+SHB-3-77
+SHB-3-81
+SHB-3-82
+
 [podiums]
 SHB-1-59
 SHB-1-56

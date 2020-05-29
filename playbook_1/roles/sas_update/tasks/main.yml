@@ -9,6 +9,7 @@
   check_mode: yes
   register: conf
   failed_when: (conf is failed)
+  ignore_errors: true
 
 - block:
 
@@ -38,3 +39,40 @@
   win_file:
     path: C:\Temp\ansbl_copy
     state: absent
+
+- block: 
+
+  - name: Copy folder to C:\Temp (results in C:\Temp)
+    win_copy:
+      src: SAS94_9C8R3R_70138817_Win_X64_Wrkstn.txt
+      dest: C:\Temp\
+    # register: create_license2
+
+  - name: Copy response to C:\Temp
+    win_copy:
+      src: sdwresponse.properties
+      dest: C:\Temp\
+    register: create_response
+
+  - name: Update License (with Deployment Manager)
+    win_shell: '& "C:\Program Files\SASHome\SASDeploymentManager\9.4\sasdm.exe" -quiet -responsefile "C:\temp\sdwresponse.properties"'
+    when: create_response.changed
+    register: results
+    # changed_when: results.rc == 4294967295
+
+ # - name: wait for update
+ #   wait_for:
+ #     path: C:\Program Files\SASHome\SASFoundation\9.4\setinit.log
+ #     search_regex: "Expiration:   30NOV2020."
+
+  - name: Remove files
+    win_file:
+      path: 'C:\Temp\SAS94_9C8R3R_70138817_Win_X64_Wrkstn.txt'
+      state: absent
+
+  - name: Remove property file
+    win_file:
+      path: 'C:\temp\sdwresponse.properties'
+      state: absent
+  
+  when: conf is failed

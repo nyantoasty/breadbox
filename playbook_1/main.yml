@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: failed
   tasks: 
     
     - import_role:
