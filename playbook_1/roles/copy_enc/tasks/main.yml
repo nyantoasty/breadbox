@@ -1,0 +1,7 @@
+---
+# tasks file for copy_enc
+
+- name: Copy .enc to appropriate Compass folder
+  win_copy:
+    src: CTCConfig.enc
+    dest: c:\Certiport\Compass\Data\CTCConfig.enc

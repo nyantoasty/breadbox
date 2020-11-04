@@ -3,5 +3,5 @@
 
 - name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
   win_copy:
-    src: SAS94_9C8R3R_70138817_Win_X64_Wrkstn.txt
+    src: SAPGUI760.exe
     dest: C:\Temp\ansbl_copy\

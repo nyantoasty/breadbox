@@ -1,0 +1,6 @@
+---
+# tasks file for get_windows
+
+- name: run getVersion.ps1 against host
+  win_shell: C:\temp\ansbl_copy\getVersion.ps1
+  register: winver_out

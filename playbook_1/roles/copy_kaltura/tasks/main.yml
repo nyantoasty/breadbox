@@ -1,0 +1,7 @@
+---
+# tasks file for copy_kaltura
+
+- name: Copy folder to C:\Temp (results in C:\Temp\Kaltura)
+  win_copy:
+    src: KalturaCapture_4.2.83.msi
+    dest: C:\Temp\Kaltura\

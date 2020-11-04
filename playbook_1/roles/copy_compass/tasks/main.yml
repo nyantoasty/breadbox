@@ -1,0 +1,7 @@
+---
+# tasks file for copy_compass
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: Compass_Setup.exe
+    dest: C:\Temp\ansbl_copy\

@@ -1,0 +1,6 @@
+---
+# tasks file for output_winver
+
+- name: outputs Zoom version
+  debug:
+    msg: Zoom version is {{ Zoom_out.stdout }}

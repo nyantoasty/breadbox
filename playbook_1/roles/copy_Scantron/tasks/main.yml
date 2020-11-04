@@ -1,0 +1,7 @@
+---
+# tasks file for copy_Scantron
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: ScantronData.msi
+    dest: C:\Temp\ansbl_copy\

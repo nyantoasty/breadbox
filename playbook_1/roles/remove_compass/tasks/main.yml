@@ -1,0 +1,10 @@
+---
+# tasks file for remove_compass
+
+- name: copies Compass uninstaller to C:\
+  win_copy:
+    src: CompassUninstall_2.ps1
+    dest: C:\Temp\ansbl_copy\
+
+- name: Runs .ps1 script
+  win_command: powershell.exe C:\Temp\ansbl_copy\CompassUninstall_2.ps1

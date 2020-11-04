@@ -1,0 +1,6 @@
+---
+# tasks file for output_winver
+
+- name: outputs windows version
+  debug:
+    msg: Windows version is {{ winver_out.stdout }}

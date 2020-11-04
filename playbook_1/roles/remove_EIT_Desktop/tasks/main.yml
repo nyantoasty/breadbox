@@ -1,0 +1,7 @@
+---
+# tasks file for remove_EIT_Desktop
+
+- name: Remove the icon for EIT.exe
+  win_file:
+    path: C:\Users\Public\Desktop\ELMO Interactive Toolbox.lnk
+    state: absent

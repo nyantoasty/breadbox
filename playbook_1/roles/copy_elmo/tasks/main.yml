@@ -1,0 +1,7 @@
+---
+# tasks file for copy_elmo
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: EITSetup_ver3_12.msi
+    dest: C:\Temp\ansbl_copy\

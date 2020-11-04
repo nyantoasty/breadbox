@@ -1,0 +1,16 @@
+---
+# tasks file for remove_SAP
+
+- name: checks for uninstaller
+  win_stat: 
+    path: 'C:\Program Files (x86)\SAP\SapSetup\setup\NwSapSetup.exe'
+  register: SAP_installed
+
+- name: runs SAP uninstaller
+  win_command: '"C:\Program Files (x86)\SAP\SapSetup\setup\NwSapSetup.exe" /all /uninstall /silent'
+  when: SAP_installed.stat.exists==true
+  register: uninstall_success
+  
+- name: initiates reboot   
+  win_reboot:
+    when: uninstall_success.yes

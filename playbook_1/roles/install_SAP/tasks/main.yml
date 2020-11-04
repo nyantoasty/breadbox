@@ -1,0 +1,7 @@
+---
+# tasks file for install_SAP
+
+- name: runs SAP installer
+  win_command: 'C:\temp\ansbl_copy\SAPGUI760.exe /silent'
+  register: installed
+  failed_when: installed.rc != 1 and installed.rc != 0

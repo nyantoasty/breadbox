@@ -1,5 +1,3 @@
-- hosts: failed
-  tasks: 
-    
-    - import_role:
-        name: sas_update
+- hosts: SHB-2-14
+  roles:
+    - copy_Scantron

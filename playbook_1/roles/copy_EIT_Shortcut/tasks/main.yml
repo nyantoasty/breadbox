@@ -1,0 +1,8 @@
+---
+# tasks file for copy_EIT_Shortcut
+
+- name: Copy shortcut to C:\Users\Public\Desktop
+  win_copy:
+    src: Imagemate.lnk
+    dest: C:\Users\Public\Desktop\
+    force: yes

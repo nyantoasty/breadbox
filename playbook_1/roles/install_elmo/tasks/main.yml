@@ -1,0 +1,5 @@
+---
+# tasks file for install_elmo
+
+- name: runs Elmo EIT installer
+  win_shell: 'C:\temp\ansbl_copy\EITSetup_ver3_12.msi /quiet'

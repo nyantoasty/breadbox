@@ -1,0 +1,5 @@
+---
+# tasks file for install_compass
+
+- name: runs Compass installer
+  win_shell: 'C:\temp\ansbl_copy\Compass_Setup.exe /Silent Path="C:\Certiport\Compass" /UpdateSchedule Weekly /UpateTime 00:30'
