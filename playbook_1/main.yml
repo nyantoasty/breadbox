@@ -1,5 +1,8 @@
-- hosts: failed
-  tasks: 
-    
-    - import_role:
-        name: sas_update
+- hosts: D148185
+  roles:
+        - install_veyon
+        - copy_EIT_Shortcut
+        #- copy_compass
+        #- install_compass
+        #- copy_data
+        #- install_SAP
