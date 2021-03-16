@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18a1c76c429f707384e520e960fb2f37501f55d684aae3f5e3d02fdd8e492301
-size 70
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - copy_compass

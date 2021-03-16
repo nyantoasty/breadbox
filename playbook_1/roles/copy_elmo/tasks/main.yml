@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f79510bcb70b2da2a28ec7123bd69a54a35714a77371ea00176c7fb0e14f83c1
-size 166
+---
+# tasks file for copy_elmo
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: EITSetup_ver3_12.msi
+    dest: C:\Temp\ansbl_copy\

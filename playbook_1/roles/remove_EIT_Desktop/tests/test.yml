@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af289e76b51509c23ca0b7d6ad132192fb87fad2576d551a6375ad2ef0beaa0a
-size 76
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - remove_EIT_Desktop

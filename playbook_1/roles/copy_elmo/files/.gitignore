@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e9fa2f8ebf4e01775086bb16f34351b51717fd5c3099615b71bc01961b89666
-size 12
+*.exe
+*.msi
