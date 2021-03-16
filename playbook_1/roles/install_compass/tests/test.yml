@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad40db065478da8824d724cf2b6f6cfa781a0ae5e0c7d942ce0137effb76752e
-size 73
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - install_compass

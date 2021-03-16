@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b40f390b122d7f7b7b8e34d57fbf492045bea43fd7c073c9d21f5eab7a8f7a69
-size 74
+- hosts: D148185
+  roles:
+        - install_veyon
+        - copy_EIT_Shortcut
+        #- copy_compass
+        #- install_compass
+        #- copy_data
+        #- install_SAP

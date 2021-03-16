@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34cb6c7ad2cda3935d7c90f496406668c0f5efb8b523d3539938b9a0ff9e7bda
-size 166
+---
+# tasks file for copy_compass
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: Compass_Setup.exe
+    dest: C:\Temp\ansbl_copy\

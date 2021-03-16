@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f606f9f051985bd1bf9b6bd27fd288a99be3c6a0912dafec6085cd47eb82b9f
-size 70
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - confirm_date

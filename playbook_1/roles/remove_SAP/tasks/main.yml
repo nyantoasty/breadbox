@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c543ffc5a7c0b3fe48cd0a0233736a803f2ac910953d2f09dc557e91ce153b93
-size 448
+---
+# tasks file for remove_SAP
+
+- name: checks for uninstaller
+  win_stat: 
+    path: 'C:\Program Files (x86)\SAP\SapSetup\setup\NwSapSetup.exe'
+  register: SAP_installed
+
+- name: runs SAP uninstaller
+  win_command: '"C:\Program Files (x86)\SAP\SapSetup\setup\NwSapSetup.exe" /all /uninstall /silent'
+  when: SAP_installed.stat.exists==true
+  register: uninstall_success
+  
+- name: initiates reboot   
+  win_reboot:
+    when: uninstall_success.yes

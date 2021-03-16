@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64bcd0f840f2c7ff4f5b1a3736a7f5b86d904933b128d24b39e890f24b48d0a5
-size 168
+---
+# tasks file for copy_kaltura
+
+- name: Copy folder to C:\Temp (results in C:\Temp\Kaltura)
+  win_copy:
+    src: KalturaCapture_4.2.83.msi
+    dest: C:\Temp\Kaltura\

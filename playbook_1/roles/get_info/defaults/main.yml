@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a6c0003af0c245236fc590878ece14bd6af65ad281f7ae11affaf0caf2c4e63
-size 244
+---
+# defaults file for get_info
+
+- name: Get disk facts
+   win_disk_facts:
+
+- name: Results
+   debug:
+    msg: Memory in system {{ ansible_facts['memtotal_mb'] }} Mb | Size of the 1st disk {{ ansible_facts.disks[0].size|filesizeformat(true) }}

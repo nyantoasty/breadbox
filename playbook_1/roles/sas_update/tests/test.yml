@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eaf6294139647355b1d7db40567541314bd9a881efeb22dc8515b1d29aa86f3c
-size 68
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - sas_update

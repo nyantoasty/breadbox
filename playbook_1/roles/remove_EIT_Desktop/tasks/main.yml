@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a99afc104fde9c1c4e055b64ddd77e959e36ec698c23b6287c34c790faf8572c
-size 169
+---
+# tasks file for remove_EIT_Desktop
+
+- name: Remove the icon for EIT.exe
+  win_file:
+    path: C:\Users\Public\Desktop\ELMO Interactive Toolbox.lnk
+    state: absent
