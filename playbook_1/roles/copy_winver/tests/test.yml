@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - copy_winver
+version https://git-lfs.github.com/spec/v1
+oid sha256:024c3953cb0f12dbd2453840cafa79b40eebf3415b6bbb22c26cb38b445c7d0d
+size 69

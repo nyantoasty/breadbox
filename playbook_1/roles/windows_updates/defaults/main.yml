@@ -1,4 +1,3 @@
----
-# defaults file for windows_updates
-
-win_updates_category_names: ['CriticalUpdates', 'SecurityUpdates', 'UpdateRollups', 'Service Packs', Application', DefinitionUpdates', 'Feature Packs']
+version https://git-lfs.github.com/spec/v1
+oid sha256:aef71fcfdb8d5f71111b4e1562f8e5042de038fb5252786987615553394e8dbf
+size 192

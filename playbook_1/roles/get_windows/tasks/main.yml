@@ -1,6 +1,3 @@
----
-# tasks file for get_windows
-
-- name: run getVersion.ps1 against host
-  win_shell: C:\temp\ansbl_copy\getVersion.ps1
-  register: winver_out
+version https://git-lfs.github.com/spec/v1
+oid sha256:2006c743c2a0b91850c4bbf2ee7426f31c3ec5543d6b1beba75b109f90230db7
+size 144

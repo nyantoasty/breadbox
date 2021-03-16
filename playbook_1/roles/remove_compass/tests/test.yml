@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - remove_compass
+version https://git-lfs.github.com/spec/v1
+oid sha256:8fea89b71e1c85c0865c481ac571b3f7595bf3cac3bf27cb3821c863ef2c05b0
+size 72

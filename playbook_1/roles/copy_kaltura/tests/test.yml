@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - copy_kaltura
+version https://git-lfs.github.com/spec/v1
+oid sha256:5adf6f52952e0f3d852e02cbaee2062563ed24a0dc0be73e518184c04289f69e
+size 70

@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - copy_elmo
+version https://git-lfs.github.com/spec/v1
+oid sha256:42451420080b1947c5af9e390c8663e19f995d1bd55a89b03485660f2ef56f7f
+size 67

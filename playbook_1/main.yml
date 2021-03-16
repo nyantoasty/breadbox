@@ -1,3 +1,3 @@
-- hosts: SHB-2-14
-  roles:
-    - copy_Scantron
+version https://git-lfs.github.com/spec/v1
+oid sha256:62405dad2c8a4ee5eead06049370336b3ebba16033e70f9f68475ab5158929fd
+size 157

@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - output_zoom
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b92be13e18e32b1b98230c991d3479dcd780ec38bc3001b141c524eee03186b
+size 69

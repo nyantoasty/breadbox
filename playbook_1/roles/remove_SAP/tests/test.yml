@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - remove_SAP
+version https://git-lfs.github.com/spec/v1
+oid sha256:fddc29c544f4f79f80fd391b0169b2dd1a8da106e99cdd10053f3dd6c683447a
+size 68

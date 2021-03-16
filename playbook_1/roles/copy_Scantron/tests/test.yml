@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - copy_Scantron
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f71597b98ad869d7244dd99e8ede384dff2c501a7edb14deaf375f43931f38e
+size 71

@@ -1,7 +1,3 @@
----
-# tasks file for delete_data'
-
-- name: Remove files
-  win_file:
-    path: C:\Temp\ansbl_copy
-    state: absent
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8302d23dc83b6d957ee2b7f873f748b9ef67c2d8b177d010943510b6ff3de1c
+size 114

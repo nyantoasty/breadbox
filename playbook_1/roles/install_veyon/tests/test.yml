@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - install_veyon
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d3f5f8eb6f2b107a125b25348b87a3c090737b64520ad81d519f47fe20a9622
+size 71

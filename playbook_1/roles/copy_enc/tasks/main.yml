@@ -1,7 +1,3 @@
----
-# tasks file for copy_enc
-
-- name: Copy .enc to appropriate Compass folder
-  win_copy:
-    src: CTCConfig.enc
-    dest: c:\Certiport\Compass\Data\CTCConfig.enc
+version https://git-lfs.github.com/spec/v1
+oid sha256:2faab9cced70fbeb071bc6ba39b7ff7222f064fda9db5b3fea7c2e7a31d402df
+size 163

@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - copy_EIT_Shortcut
+version https://git-lfs.github.com/spec/v1
+oid sha256:ddb3ff388c01db7816a0e4564c26923c33228d4b7d1b11fe750b50e46266b8d2
+size 75

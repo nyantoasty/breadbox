@@ -1,6 +1,3 @@
----
-# tasks file for test
-
-- name: Host OS version
-  debug:
-      msg: "{{ ansible_hostname }} is running windows version {{ ansible_distribution_version }}"
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3f4848553df0571029c7b4492a9cf490a3dafbf6633666b3f3af28683bed9b4
+size 157

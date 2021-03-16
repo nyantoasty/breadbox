@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - install_elmo
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa964aa885dc32b5ed41a857a10ed96cee750ce1279d75b8f2bf54973f7724cb
+size 70
