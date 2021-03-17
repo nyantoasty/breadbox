@@ -1,0 +1,5 @@
+---
+# tasks file for cleanup_ansbl_copy
+
+- name: empties ansbl_copy directory
+  win_shell: Get-ChildItem -Path C:\Temp\ansbl_copy\ -Include *.* -File -Recurse | foreach { $_.Delete()}

@@ -1,0 +1,7 @@
+---
+# tasks file for copy_Camtasia
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: Camtasia/
+    dest: C:\Temp\ansbl_copy\

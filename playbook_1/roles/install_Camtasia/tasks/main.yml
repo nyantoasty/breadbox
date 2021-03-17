@@ -1,0 +1,5 @@
+---
+# tasks file for install_Camtasia
+
+- name: runs Camtasia installer
+  win_shell: msiexec /i "C:\temp\ansbl_copy\camtasia.msi" /qn TRANSFORMS="C:\temp\ansbl_copy\camtasia.mst"

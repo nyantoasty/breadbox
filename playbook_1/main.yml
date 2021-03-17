@@ -1,8 +1,13 @@
-- hosts: D148185
+- hosts: SHB-1-52
   roles:
-        - install_veyon
-        - copy_EIT_Shortcut
+        - copy_Camtasia
+        - copy_Snagit
+        - install_Camtasia
+        - install_Snagit
+        #- install_veyon
+        #- copy_EIT_Shortcut
         #- copy_compass
         #- install_compass
         #- copy_data
         #- install_SAP
+        #- cleanup_ansbl_copy
