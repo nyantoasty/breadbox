@@ -1,0 +1,5 @@
+---
+# tasks file for install_Cybertrack
+
+- name: runs Cybertrack installer
+  win_shell: 'C:\temp\ansbl_copy\Adesso_Cybertrack_Driver.exe /VERYSILENT /SUPRESSMSGBOXES /NORESTART'
