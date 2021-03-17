@@ -6,6 +6,9 @@ ansible_port=5985
 [localhost]
 127.0.0.1
 
+[test]
+D148185
+
 [facultyACC]
 SHB-3-119
 SHB-3-120
