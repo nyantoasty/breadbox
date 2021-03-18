@@ -1,11 +1,11 @@
-- hosts: SHB-3-220
+- hosts: test
   roles:
-        - copy_Cybertrack
-        - install_Cybertrack
-        #- copy_Camtasia
-        #- copy_Snagit
-        #- install_Camtasia
-        #- install_Snagit
+        #- copy_Cybertrack
+        #- install_Cybertrack
+        - copy_Camtasia
+        - copy_Snagit
+        - install_Camtasia
+        - install_Snagit
         #- install_veyon
         #- copy_EIT_Shortcut
         #- copy_compass
