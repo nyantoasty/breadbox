@@ -1,15 +1,15 @@
-- hosts: test
+- hosts: SHB-3-56
   roles:
         #- copy_Cybertrack
-        #- install_Cybertrack
-        - copy_Camtasia
-        - copy_Snagit
-        - install_Camtasia
-        - install_Snagit
-        #- install_veyon
+        #- copy_data
+        #- copy_Camtasia
+        #- copy_Snagit
         #- copy_EIT_Shortcut
         #- copy_compass
+        #- install_Cybertrack
+        #- install_Camtasia
+        - install_Snagit
+        #- install_veyon
         #- install_compass
-        #- copy_data
         #- install_SAP
         #- cleanup_ansbl_copy

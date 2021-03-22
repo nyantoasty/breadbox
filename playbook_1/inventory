@@ -3,10 +3,13 @@ ansible_connection=winrm
 ansible_winrm_transport=ntlm
 ansible_port=5985
 
-[localhost]
-127.0.0.1
-
 [test]
+SHB-3-178
+SHB-3-227
+SHB-3-228
+SHB-2-58
+SHB-2-131
+SHB-2-120
 SHB-2-140
 SHB-2-10
 
@@ -51,7 +54,7 @@ SHB-1-51
 SHB-1-52
 SHB-1-58
 SHB-3-221
-SHB-3-56
+SHB-3-56 ansible_connection=local
 SHB-3-12
 SHB-1-127
 SHB-1-131
