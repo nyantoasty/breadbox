@@ -1,0 +1,7 @@
+---
+# tasks file for copy_Logitech
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: Capture_2.06.8.exe
+    dest: C:\Temp\ansbl_copy\

@@ -1,8 +1,15 @@
-- hosts: D148185
+- hosts: SHB-3-56
   roles:
-        - install_veyon
-        - copy_EIT_Shortcut
+        #- copy_Cybertrack
+        #- copy_data
+        #- copy_Camtasia
+        #- copy_Snagit
+        #- copy_EIT_Shortcut
         #- copy_compass
+        #- install_Cybertrack
+        #- install_Camtasia
+        - install_Snagit
+        #- install_veyon
         #- install_compass
         #- copy_data
         #- install_SAP
