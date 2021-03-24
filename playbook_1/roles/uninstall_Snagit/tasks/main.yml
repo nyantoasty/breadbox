@@ -1,0 +1,5 @@
+---
+# tasks file for uninstall_Snagit
+
+- name: runs Snagit uninstaller
+  win_shell: msiexec.exe /uninstall {18CF1664-3AC5-43BA-A730-520FE482DDB6} TSC_DATA_STORE=0 /quiet
