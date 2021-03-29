@@ -1,15 +1,16 @@
-- hosts: test
+- hosts: podiums
   roles:
         #- copy_Cybertrack
         #- copy_data
         #- copy_Camtasia
-        - copy_Snagit
+        #- copy_Snagit
         #- copy_EIT_Shortcut
         #- copy_compass
+        - copy_Logitech
         #- install_Cybertrack
         #- install_Camtasia
-        - uninstall_Snagit
-        - install_Snagit
+        #- uninstall_Snagit
+        #- install_Snagit
         #- install_veyon
         #- install_compass
         #- copy_data
