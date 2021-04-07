@@ -1,4 +1,4 @@
-- hosts: podiums
+- hosts: test
   roles:
         #- copy_Cybertrack
         #- copy_data
@@ -6,7 +6,7 @@
         #- copy_Snagit
         #- copy_EIT_Shortcut
         #- copy_compass
-        - copy_Logitech
+        #- copy_Logitech
         #- install_Cybertrack
         #- install_Camtasia
         #- uninstall_Snagit
@@ -15,3 +15,4 @@
         #- install_compass
         #- copy_data
         #- install_SAP
+        - run_haspdinst.exe
