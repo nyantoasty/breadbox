@@ -4,8 +4,12 @@ ansible_winrm_transport=ntlm
 ansible_port=5985
 
 [test]
-SHB-3-17
-SHB-3-207
+SHB-3-30
+SHB-3-24
+SHB-3-161
+SHB-3-41
+SHB-3-106
+SHB-3-159
 
 [facultyACC]
 SHB-3-119

@@ -1,0 +1,10 @@
+---
+# tasks file for query_Compass
+
+- name: checking for Compass installation/version
+  win_shell: Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | where{$_.DisplayName -eq "Compass"} | Select-Object DisplayName, DisplayVersion | Format-Table -AutoSize
+  register: result
+
+- name: print results
+  debug:
+    msg: "{{result.stdout | trim }}"

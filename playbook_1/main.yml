@@ -15,4 +15,5 @@
         #- install_compass
         #- copy_data
         #- install_SAP
-        - run_haspdinst.exe
+        #- run_haspdinst.exe
+        - query_Compass
