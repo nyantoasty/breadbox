@@ -1,0 +1,5 @@
+---
+# tasks file for repair_O365
+
+- name: running online repair for O365
+  win_shell: Start-Process -Filepath "C:\Program Files\Microsoft Office 15\ClientX64\OfficeClickToRun.exe" -ArgumentList "scenario=Repair DisplayLevel=false RepairType=FullRepair DisplayLevel=False forceappshutdown=true"

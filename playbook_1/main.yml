@@ -1,5 +1,6 @@
 - hosts: test
   roles:
+        - run_Dell_CMD_Updt
         #- copy_Cybertrack
         #- copy_data
         #- copy_Camtasia
@@ -7,6 +8,7 @@
         #- copy_EIT_Shortcut
         #- copy_compass
         #- copy_Logitech
+        #- copy_enc
         #- install_Cybertrack
         #- install_Camtasia
         #- uninstall_Snagit
@@ -16,4 +18,7 @@
         #- copy_data
         #- install_SAP
         #- run_haspdinst.exe
-        - query_Compass
+        #- query_Compass
+        #- repair_O365
+        #- remove_Mendix
+        #- copy_install_VMware16

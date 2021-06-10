@@ -1,0 +1,8 @@
+---
+# tasks file for remove_Mendix
+
+- name: removing mendix
+  win_shell: $mendix = Get-WmiObject win32_product -Filter "IdentifyingNumber = '{7D33C787-621D-4D06-AA52-AA57D8F233BC}'"; $mendix.Uninstall()
+
+- name: removing mendix version selector
+  win_shell: $mendixver = Get-WmiObject win32_product -Filter "IdentifyingNumber = '{BA84740F-EA82-4B42-8CAA-29D04942FC6A}'"; $mendixver.Uninstall()

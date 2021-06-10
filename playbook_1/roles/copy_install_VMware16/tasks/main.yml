@@ -1,0 +1,11 @@
+---
+# tasks file for copy_install_VMware16
+
+
+- name: Copy installer
+  win_copy:
+    src: VMware-player-16.1.2-17966106.exe
+    dest: c:\Temp\ansbl_copy\
+
+- name: Run installer
+  win_command: C:\Temp\ansbl_copy\VMware-player-16.1.2-17966106.exe /s /v /qn EULAS_AGREED=1
