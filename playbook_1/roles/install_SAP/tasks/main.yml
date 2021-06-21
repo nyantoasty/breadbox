@@ -1,6 +1,11 @@
 ---
 # tasks file for install_SAP
 
+- name: Copy SAP to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: SAPGUI760.exe
+    dest: C:\Temp\ansbl_copy\
+
 - name: runs SAP installer
   win_command: 'C:\temp\ansbl_copy\SAPGUI760.exe /silent'
   register: installed

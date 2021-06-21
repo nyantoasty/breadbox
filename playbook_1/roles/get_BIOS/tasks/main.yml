@@ -1,0 +1,14 @@
+---
+# tasks file for get_BIOS
+
+- name: get_BIOS
+  win_command: wmic bios get smbiosbiosversion
+  register: result_BIOS
+
+- name: get_model
+  win_command: wmic csproduct get name
+  register: model
+
+- name: echo BIOS version
+  debug: 
+    msg: Node {{ inventory_hostname }} (model {{ model.stdout | regex_replace ('Name', '') | trim }} ) has BIOS version {{ result_BIOS.stdout | regex_replace('\r\r\n', '') | trim }}

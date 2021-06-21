@@ -1,0 +1,8 @@
+---
+# tasks file for fix_technician
+
+- name: fix_technician
+  win_shell: | 
+      net localgroup administrators Technician /add
+      net localgroup administrators "shsu\admin (local)" /add
+      net localgroup administrators "shsu\domain admins" /add

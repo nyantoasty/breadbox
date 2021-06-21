@@ -1,17 +1,24 @@
 ---
-# tasks file for install_veyon
+# tasks file for veyon_Master
 
 - name: Install veyon
   win_chocolatey:
     name: veyon
+    package_params: Master
     state: present
 
 - name: update veyon
   win_chocolatey:
     name: veyon
+    package_params: Master
     state: latest
 
 - name: configure destination
   win_command: .\veyon-cli config set FileTransfer/DestinationDirectory C:\Temp\
   args:
-    chdir: C:\Progra~\Veyon
+    chdir: C:\Progra~1\Veyon
+
+- name: remote connection notification
+  win_command: .\veyon-cli.exe config set Service/RemoteConnectionNotifications true
+  args:
+    chdir: C:\Progra~1\Veyon

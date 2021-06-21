@@ -1,0 +1,7 @@
+---
+# tasks file for veyon_faculty
+
+- name: remote connection notification
+  win_command: .\veyon-cli.exe config set Service/RemoteConnectionNotifications true
+  args:
+    chdir: C:\Progra~1\Veyon

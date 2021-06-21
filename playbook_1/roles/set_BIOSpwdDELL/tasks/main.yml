@@ -1,0 +1,7 @@
+---
+# tasks file for set_BIOSpwdDELL
+
+- name: setting password
+  win_command: dcu-cli.exe /configure -biosPassword=bigwheel
+  args:
+    chdir: C:\Progra~2\Dell\CommandUpdate

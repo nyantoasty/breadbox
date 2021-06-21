@@ -1,2 +1,48 @@
 ---
 # tasks file for run_Dell_CMD_Updt
+
+- name: get_BIOS1
+  win_command: wmic bios get smbiosbiosversion
+  register: result_BIOS1
+
+- name: get_Product
+  win_command: wmic csproduct get name
+  register: model
+
+- name: Run scan
+  win_command: dcu-cli.exe /scan -silent
+  args:
+    chdir: C:\Progra~2\Dell\CommandUpdate
+  register: scan_result
+  ignore_errors: true
+    
+- name: Alert if no updates
+  debug:
+    msg: "No updates available."
+  when: scan_result.rc == 500
+  
+- name: Apply updates
+  block:
+  - name: Applying updates
+    win_command: dcu-cli.exe /applyUpdates
+    args:
+      chdir: C:\Progra~2\Dell\CommandUpdate
+    register: update_result
+    ignore_errors: true
+  
+  - name: Alert about reboot
+    debug:
+      msg: "Updates applied.  Rebooting momentarily."
+     
+  - name: Reboot computer
+    win_reboot:
+
+  when: scan_result.rc != 500
+
+- name: get_BIOS2
+  win_command: wmic bios get smbiosbiosversion
+  register: result_BIOS2
+
+- name: echo BIOS version
+  debug: 
+    msg: Node {{ inventory_hostname }} (model {{ model.stdout | regex_replace ('Name', '') | trim }} ) had BIOS version {{ result_BIOS1.stdout | regex_replace('\r\r\n', '') | trim }} and is now version {{ result_BIOS2.stdout | regex_replace('\r\r\n', '') | trim }}

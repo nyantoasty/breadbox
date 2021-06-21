@@ -1,21 +1,25 @@
-- hosts: test
+- hosts: SHB-1-76
   roles:
+        #- fix_technician
+        #- get_BIOS
+        #- set_BIOSpwdDELL
         - run_Dell_CMD_Updt
+        #- install_veyon
+        #- veyon_faculty
+        #- veyon_Master
         #- copy_Cybertrack
         #- copy_data
         #- copy_Camtasia
         #- copy_Snagit
         #- copy_EIT_Shortcut
         #- copy_compass
+        #- install_compass
         #- copy_Logitech
         #- copy_enc
         #- install_Cybertrack
         #- install_Camtasia
         #- uninstall_Snagit
         #- install_Snagit
-        #- install_veyon
-        #- install_compass
-        #- copy_data
         #- install_SAP
         #- run_haspdinst.exe
         #- query_Compass
