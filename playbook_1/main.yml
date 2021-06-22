@@ -1,12 +1,13 @@
-- hosts: SHB-1-76
+- hosts: lab130
+
   roles:
         #- fix_technician
-        #- get_BIOS
+        - get_BIOS
         #- set_BIOSpwdDELL
-        - run_Dell_CMD_Updt
         #- install_veyon
-        #- veyon_faculty
         #- veyon_Master
+        #- veyon_faculty
+        #- run_Dell_CMD_Updt
         #- copy_Cybertrack
         #- copy_data
         #- copy_Camtasia

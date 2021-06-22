@@ -5,3 +5,4 @@
   win_command: dcu-cli.exe /configure -biosPassword=bigwheel
   args:
     chdir: C:\Progra~2\Dell\CommandUpdate
+  ignore_errors: true

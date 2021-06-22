@@ -14,4 +14,4 @@
 - name: configure destination
   win_command: .\veyon-cli config set FileTransfer/DestinationDirectory C:\Temp\
   args:
-    chdir: C:\Progra~\Veyon
+    chdir: C:\Progra~1\Veyon

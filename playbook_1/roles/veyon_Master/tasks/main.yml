@@ -4,14 +4,15 @@
 - name: Install veyon
   win_chocolatey:
     name: veyon
-    package_params: Master
     state: present
+    package_params: '"/Master"'
 
 - name: update veyon
   win_chocolatey:
     name: veyon
-    package_params: Master
     state: latest
+    package_params: '"/Master"'
+    force: yes
 
 - name: configure destination
   win_command: .\veyon-cli config set FileTransfer/DestinationDirectory C:\Temp\
