@@ -1,0 +1,4 @@
+---
+# tasks file for run_gpupdate and reboot
+- name: This will run gpupdate
+  win_shell: gpupdate /force; shutdown -r -t 1

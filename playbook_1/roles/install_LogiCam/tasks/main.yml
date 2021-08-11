@@ -1,0 +1,15 @@
+---
+# tasks file for install_LogiCam
+
+#- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+#  win_copy:
+#    src: LogiCameraSettings_2.12.10.exe
+#    dest: C:\Temp\ansbl_copy\
+
+#- name: silently install LogiCameraSettings_2.12.10.exe
+#  win_command: LogiCameraSettings_2.12.10.exe /quiet /norestart
+#  args:
+#    chdir: C:\Temp\ansbl_copy\
+
+- name: Uses Chocolatey to install Logitech Camera Settings
+  win_command: choco install logitech-camera-settings -y

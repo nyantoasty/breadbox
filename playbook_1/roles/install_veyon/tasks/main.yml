@@ -12,6 +12,6 @@
     state: latest
 
 - name: configure destination
-  win_command: .\veyon-cli config set FileTransfer/DestinationDirectory C:\Temp\
+  win_command: .\veyon-cli config set FileTransfer/DestinationDirectory C:\Temp\ansbl_copy\
   args:
     chdir: C:\Progra~1\Veyon

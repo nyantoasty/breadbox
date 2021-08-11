@@ -3,5 +3,5 @@
 
 - name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
   win_copy:
-    src: Capture_2.06.8.exe
+    src: Capture_2.06.12.exe
     dest: C:\Temp\ansbl_copy\

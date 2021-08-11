@@ -1,0 +1,14 @@
+---
+# tasks file for config_BIOS_All
+
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: multiplatform_202108071847_x64.exe
+    dest: C:\Temp\ansbl_copy\
+
+- name: run BIOS config
+  win_command: multiplatform_202108071847_x64.exe
+  args:
+    chdir: C:\Temp\ansbl_copy\
+  ignore_errors: yes

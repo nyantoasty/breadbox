@@ -1,13 +1,16 @@
-- hosts: lab130
+- hosts: labscoba
 
   roles:
         #- fix_technician
-        - get_BIOS
+        #- get_BIOS
+        #- get_MAC
         #- set_BIOSpwdDELL
         #- install_veyon
         #- veyon_Master
         #- veyon_faculty
-        #- run_Dell_CMD_Updt
+        - config_BIOS_All
+        - run_Dell_CMD_Updt
+        #- config_BIOS_7050
         #- copy_Cybertrack
         #- copy_data
         #- copy_Camtasia
@@ -15,14 +18,18 @@
         #- copy_EIT_Shortcut
         #- copy_compass
         #- install_compass
+        #- install_SSMS
         #- copy_Logitech
         #- copy_enc
+        #- install_BrioUpdtr
         #- install_Cybertrack
         #- install_Camtasia
+        #- install_LogiCam
         #- uninstall_Snagit
         #- install_Snagit
         #- install_SAP
         #- run_haspdinst.exe
+        #- run_gpupdate
         #- query_Compass
         #- repair_O365
         #- remove_Mendix

@@ -1,0 +1,39 @@
+---
+# tasks file for install_BrioUpdtr
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: FWUpdateBRIO.exe
+    dest: C:\Temp\ansbl_copy\
+
+- name: Check FW version
+  win_command: FWUpdateBRIO.exe /versioninfo
+  args:
+    chdir: C:\Temp\ansbl_copy\
+  register: version
+
+#- name: echo firmware version
+#  debug: 
+#    msg: Node {{ inventory_hostname }} currently has firmware version {{ version.stdout | regex_replace('\r\n\r\n', '') | trim }}
+
+- name: silently install Brio firmware updater
+  win_command: FWUpdateBRIO.exe /silentupdate
+  args:
+    chdir: C:\Temp\ansbl_copy\
+  ignore_errors: yes
+
+- name: Check new FW version
+  win_command: FWUpdateBRIO.exe /versioninfo
+  args:
+    chdir: C:\Temp\ansbl_copy\
+  register: newVersion
+
+- name: Changes were made
+  debug: 
+    msg: Node {{ inventory_hostname }} has had its firmware upgraded.
+  when: version != newVersion
+
+- name: Changes were not made
+  debug:
+    msg: Node {{ inventory_hostname }} does not need an update.
+  when: version == newVersion

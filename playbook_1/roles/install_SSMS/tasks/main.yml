@@ -1,0 +1,12 @@
+---
+# tasks file for install_SSMS
+
+- name: Copy installer to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: SSMS-Setup-ENU.exe
+    dest: C:\Temp\ansbl_copy\
+
+- name: Unattended install of SSMS-Setup-ENU.exe
+  win_command: SSMS-Setup-ENU.exe /install /quiet /norestart
+  args:
+    chdir: C:\Temp\ansbl_copy\
