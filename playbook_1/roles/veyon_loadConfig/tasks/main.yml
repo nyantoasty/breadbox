@@ -1,0 +1,17 @@
+---
+# tasks file for veyon_loadConfig
+
+- name: Copy config to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: labmaster.json
+    dest: C:\Temp\ansbl_copy\
+
+- name: load config file for veyon lab master
+  win_command: .\veyon-cli.exe config import "C:\Temp\ansbl_copy\labmaster.json"
+  args:
+    chdir: C:\Progra~1\Veyon
+
+- name: restart Veyon service
+  win_command: .\veyon-cli.exe service restart
+  args:
+    chdir: C:\Progra~1\Veyon

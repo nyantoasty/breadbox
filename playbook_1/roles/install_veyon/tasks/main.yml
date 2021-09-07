@@ -15,3 +15,13 @@
   win_command: .\veyon-cli config set FileTransfer/DestinationDirectory C:\Temp\ansbl_copy\
   args:
     chdir: C:\Progra~1\Veyon
+
+- name: configure mass-login
+  win_command: .\veyon-cli config set Windows/LogonConfirmLegalNotice true
+  args:
+    chdir: C:\Progra~1\Veyon
+
+- name: hide failed authentication notice
+  win_command: .\veyon-cli config set Service/FailedAuthenticationNotifications true
+  args:
+    chdir: C:\Progra~1\Veyon

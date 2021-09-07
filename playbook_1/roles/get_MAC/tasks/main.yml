@@ -1,18 +1,18 @@
 ---
 # tasks file for get_MAC
 
-- name: Print all available facts
-  ansible.builtin.debug:
-    var: ansible_facts[item]['macaddress']
-
 - name: get_MAC
+  win_shell: get-NetAdapter -name "Ethernet*" | Select-Object -ExpandProperty macaddress
+  register: resultMAC
+
+- name: get_OS
+  win_shell: (get-ciminstance -class win32_operatingsystem).caption
+  register: resultOS
+
+- name: get_release
+  win_shell: (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").ReleaseId
+  register: resultVER
+
+- name: print host information
   ansible.builtin.debug:  
-    msg: "Node {{ inventory_hostname }} has MAC {{ansible_facts.ansible_interfaces}}"
-
-#- name: Gathering MAC address
-#  win_shell: Get-CimInstance win32_networkadapterconfiguration | select Description, #MACAddress | where {$_.MACAddress -ne $null } | where {$_.Description -match "Intel" }
-#  register: result
-
-#- name: print results
-#  debug:
-#    msg: "{{result.stdout}}"
+    msg: "{{ inventory_hostname }}, {{resultMAC.stdout | regex_replace('\r', '') | trim }}, {{ resultOS.stdout | regex_replace('\r\n', '') | trim }}, {{ resultVER.stdout | regex_replace('\r\n', '') | trim }}."

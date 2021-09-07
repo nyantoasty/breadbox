@@ -1,15 +1,16 @@
-- hosts: labscoba
+- hosts: labsbdc
 
   roles:
         #- fix_technician
         #- get_BIOS
         #- get_MAC
         #- set_BIOSpwdDELL
-        #- install_veyon
+        - install_veyon
         #- veyon_Master
         #- veyon_faculty
-        - config_BIOS_All
-        - run_Dell_CMD_Updt
+        #- veyon_loadConfig
+        #- config_BIOS_All
+        #- run_Dell_CMD_Updt
         #- config_BIOS_7050
         #- copy_Cybertrack
         #- copy_data
@@ -25,6 +26,7 @@
         #- install_Cybertrack
         #- install_Camtasia
         #- install_LogiCam
+        #- install_OneDrive
         #- uninstall_Snagit
         #- install_Snagit
         #- install_SAP

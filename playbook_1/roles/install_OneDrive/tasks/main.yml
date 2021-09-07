@@ -1,0 +1,12 @@
+---
+# tasks file for install_OneDrive
+
+- name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
+  win_copy:
+    src: OneDriveSetup.exe
+    dest: C:\Temp\ansbl_copy\
+
+- name: silently install OneDrive
+  win_command: OneDriveSetup.exe /silent /allusers
+  args:
+    chdir: C:\Temp\ansbl_copy\
