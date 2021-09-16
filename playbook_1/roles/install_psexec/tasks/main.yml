@@ -1,0 +1,7 @@
+---
+# tasks file for install_psexec
+
+- name: install psexec
+  win_chocolatey:
+    name: psexec
+    state: present

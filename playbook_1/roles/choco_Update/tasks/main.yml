@@ -1,0 +1,7 @@
+---
+# tasks file for choco_Update
+
+- name: update chocolatey
+  win_chocolatey:
+    name: chocolatey
+    state: latest

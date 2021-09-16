@@ -1,1 +1,0 @@
-"C:\Certiport\Compass\Uninstall.exe"

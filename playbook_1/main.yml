@@ -1,11 +1,12 @@
-- hosts: labsbdc
+- hosts: SHB-3-56
 
   roles:
         #- fix_technician
+        #- choco_Update
         #- get_BIOS
         #- get_MAC
         #- set_BIOSpwdDELL
-        - install_veyon
+        #- install_veyon
         #- veyon_Master
         #- veyon_faculty
         #- veyon_loadConfig
@@ -18,7 +19,7 @@
         #- copy_Snagit
         #- copy_EIT_Shortcut
         #- copy_compass
-        #- install_compass
+        - install_compass
         #- install_SSMS
         #- copy_Logitech
         #- copy_enc
@@ -27,12 +28,15 @@
         #- install_Camtasia
         #- install_LogiCam
         #- install_OneDrive
+        - install_psexec
         #- uninstall_Snagit
         #- install_Snagit
         #- install_SAP
         #- run_haspdinst.exe
         #- run_gpupdate
         #- query_Compass
-        #- repair_O365
         #- remove_Mendix
+        - remove_compass
+        - remove_psexec
+        #- repair_O365
         #- copy_install_VMware16
