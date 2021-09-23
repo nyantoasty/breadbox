@@ -1,4 +1,4 @@
-- hosts: SHB-3-56
+- hosts: 
 
   roles:
         #- fix_technician
@@ -19,7 +19,7 @@
         #- copy_Snagit
         #- copy_EIT_Shortcut
         #- copy_compass
-        - install_compass
+        #- install_compass
         #- install_SSMS
         #- copy_Logitech
         #- copy_enc
@@ -28,15 +28,16 @@
         #- install_Camtasia
         #- install_LogiCam
         #- install_OneDrive
-        - install_psexec
+        #- install_psexec
         #- uninstall_Snagit
         #- install_Snagit
         #- install_SAP
         #- run_haspdinst.exe
         #- run_gpupdate
+        #- remove_compass
         #- query_Compass
         #- remove_Mendix
-        - remove_compass
-        - remove_psexec
+        #- remove_psexec
         #- repair_O365
+        #- set_Duplicate
         #- copy_install_VMware16

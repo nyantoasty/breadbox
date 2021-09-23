@@ -1,15 +1,6 @@
 ---
 # tasks file for remove_compass
 
-# Please note that the user session '-i 1' may not work;
-# the number depends upon who is logged in.  
-
-# Example:  If I run this against the machine I am logged in on
-# I need to use '-i 2' for the correct session
-
-# It is advisable to reboot computers before performing this
-# to ensure that there are no other sessions to worry about.
-
 # This installs, then removes, psexec in order to execute properly
 
 - name: copies Compass uninstaller to C:\

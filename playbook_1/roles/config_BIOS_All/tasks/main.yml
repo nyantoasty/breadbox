@@ -4,11 +4,11 @@
 
 - name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
   win_copy:
-    src: multiplatform_202108121004_x64.exe
+    src: multiplatform_202109221805_x64.exe
     dest: C:\Temp\ansbl_copy\
 
 - name: run BIOS config
-  win_command: multiplatform_202108121004_x64.exe
+  win_command: multiplatform_202109221805_x64.exe
   args:
     chdir: C:\Temp\ansbl_copy\
   ignore_errors: yes

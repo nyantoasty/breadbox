@@ -1,0 +1,15 @@
+---
+# tasks file for set_Duplicate
+
+- name: copies duplicate batch file to the Public Downloads folder
+  win_copy:
+    src: DuplicateMonitor.bat
+    dest: C:\Users\Public\Downloads\
+
+- name: copies shortcut to startup
+  win_copy:
+    src: DuplicateMonitorShortcut.lnk
+    dest: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\
+
+- name: sets display to duplicate
+  win_command: C:\Windows\System32\DisplaySwitch.exe /clone
