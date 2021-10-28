@@ -1,4 +1,4 @@
-- hosts: 
+- hosts: SHB-3-112
 
   roles:
         #- fix_technician
@@ -6,7 +6,8 @@
         #- get_BIOS
         #- get_MAC
         #- set_BIOSpwdDELL
-        #- install_veyon
+        #- uninstal_veyon
+        - install_veyon
         #- veyon_Master
         #- veyon_faculty
         #- veyon_loadConfig
@@ -19,10 +20,11 @@
         #- copy_Snagit
         #- copy_EIT_Shortcut
         #- copy_compass
-        #- install_compass
+        - install_compass
         #- install_SSMS
         #- copy_Logitech
         #- copy_enc
+        #- copy_tests
         #- install_BrioUpdtr
         #- install_Cybertrack
         #- install_Camtasia
@@ -31,10 +33,11 @@
         #- install_psexec
         #- uninstall_Snagit
         #- install_Snagit
-        #- install_SAP
+        - install_SAP
         #- run_haspdinst.exe
         #- run_gpupdate
         #- remove_compass
+        #- install_compass
         #- query_Compass
         #- remove_Mendix
         #- remove_psexec

@@ -1,0 +1,7 @@
+---
+# tasks file for uninstal_veyon
+
+- name: Uninstall veyon
+  win_chocolatey:
+    name: veyon
+    state: absent
