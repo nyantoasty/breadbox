@@ -12,6 +12,7 @@
   win_chocolatey:
     name: psexec
     state: present
+    ignore_checksums: true
 
 - name: Runs .exe uninstaller via psexec
   win_command: '"C:\ProgramData\chocolatey\bin\PsExec.exe" -accepteula -i 1 -s "C:\Temp\ansbl_copy\CompassUninstall.exe"'
