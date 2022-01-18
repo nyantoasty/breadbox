@@ -1,0 +1,11 @@
+---
+# tasks file for install_anaconda
+
+- name: Install Anaconda
+  win_chocolatey:
+    name: anaconda3
+    state: present
+    package_params: '"execution-timeout 9400"'
+
+- name: Install Jupyter
+  win_shell: pip install jupyter

@@ -3,14 +3,16 @@ ansible_connection=winrm
 ansible_winrm_transport=ntlm
 ansible_port=5985
 
-[test]
-SHB-2-134
-SHB-3-222
-SHB-3-19
-SHB-3-99
+[failed]
+SHB-1-84
+SHB-1-63
+SHB-1-71
+SHB-1-76
 
 [TWC]
+D145540
 TWC-2-11
+TWC-2-12
 TWC-2-13
 TWC-2-14
 TWC-2-15
@@ -25,6 +27,7 @@ TWC-2-23
 TWC-2-24
 TWC-2-25
 TWC-2-26
+TWC-2-27
 TWC-2-28
 TWC-2-29
 TWC-2-30
@@ -39,30 +42,6 @@ TWC-2-38
 TWC-2-39
 TWC-2-40
 TWC-2-41
-
-[failed]
-SHB-3-17
-SHB-3-196
-SHB-3-199
-SHB-3-211
-SHB-3-212
-SHB-3-213
-SHB-3-215
-SHB-3-216
-SHB-3-217
-SHB-3-25
-SHB-3-26
-SHB-3-47
-SHB-3-48
-
-[failedfaculty]
-W138666
-SHB-2-80
-SHB-2-58
-SHB-2-237
-SHB-1-58
-SHB-1-29
-
 
 [cobatechs]
 SHB-3-56

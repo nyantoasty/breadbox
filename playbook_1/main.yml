@@ -1,4 +1,4 @@
-- hosts: SHB-3-211
+- hosts: SHB-3-99
 
   roles:
         #- fix_technician
@@ -7,6 +7,8 @@
         #- get_MAC
         #- set_BIOSpwdDELL
         #- uninstal_veyon
+        #- install_anaconda
+        #- install_sublime
         #- install_veyon
         #- veyon_Master
         #- veyon_faculty
@@ -21,7 +23,7 @@
         #- copy_EIT_Shortcut
         #- copy_compass
         #- install_compass
-        #- install_SSMS
+        - install_SSMS
         #- copy_Logitech
         #- copy_enc
         #- copy_tests
@@ -37,7 +39,7 @@
         #- run_haspdinst.exe
         #- run_gpupdate
         #- remove_compass
-        - install_compass
+        #- install_compass
         #- query_Compass
         #- remove_Mendix
         #- remove_psexec
