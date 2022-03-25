@@ -3,9 +3,21 @@ ansible_connection=winrm
 ansible_winrm_transport=ntlm
 ansible_port=5985
 
-[failed]
-SHB-1-64 #
-SHB-1-71 #MAY NEED TO REINSTALL ANACONDA
+[failed_pw]
+SHB-1-64
+
+[failed_conda]
+SHB-1-71
+SHB-1-76
+SHB-1-84
+
+[failed_numpy]
+SHB-1-89
+SHB-1-90
+SHB-1-91
+SHB-1-92
+SHB-1-93
+
 
 [fix105]
 SHB-1-59

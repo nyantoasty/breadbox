@@ -1,0 +1,8 @@
+---
+# tasks file for fix_Numpy_Pandas
+
+- name: removes Numpy
+  win_shell: conda remove Numpy
+
+- name: installs and checks Pandas, Numpy
+  win_shell: pip install pandas

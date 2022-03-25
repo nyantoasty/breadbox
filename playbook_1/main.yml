@@ -1,4 +1,4 @@
-- hosts: SHB-3-99
+- hosts: lab105
 
   roles:
         #- fix_technician
@@ -9,12 +9,11 @@
         #- uninstal_veyon
         #- install_anaconda
         #- install_sublime
+        - fix_Numpy_Pandas
         #- install_veyon
         #- veyon_Master
         #- veyon_faculty
         #- veyon_loadConfig
-        #- config_BIOS_All
-        #- run_Dell_CMD_Updt
         #- config_BIOS_7050
         #- copy_Cybertrack
         #- copy_data
@@ -23,7 +22,7 @@
         #- copy_EIT_Shortcut
         #- copy_compass
         #- install_compass
-        - install_SSMS
+        #- install_SSMS
         #- copy_Logitech
         #- copy_enc
         #- copy_tests
@@ -46,3 +45,5 @@
         #- repair_O365
         #- set_Duplicate
         #- copy_install_VMware16
+        #- config_BIOS_All
+        #- run_Dell_CMD_Updt
