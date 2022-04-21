@@ -1,4 +1,4 @@
-- hosts: lab105
+- hosts: SHB-3-210
 
   roles:
         #- fix_technician
@@ -9,7 +9,8 @@
         #- uninstal_veyon
         #- install_anaconda
         #- install_sublime
-        - fix_Numpy_Pandas
+        #- fix_Conda
+        #- fix_Numpy_Pandas
         #- install_veyon
         #- veyon_Master
         #- veyon_faculty
@@ -34,7 +35,7 @@
         #- install_psexec
         #- uninstall_Snagit
         #- install_Snagit
-        #- install_SAP
+        - install_SAP
         #- run_haspdinst.exe
         #- run_gpupdate
         #- remove_compass
