@@ -1,4 +1,4 @@
-- hosts: SHB-3-210
+- hosts: lab340
 
   roles:
         #- fix_technician
@@ -26,7 +26,7 @@
         #- install_SSMS
         #- copy_Logitech
         #- copy_enc
-        #- copy_tests
+        - copy_tests
         #- install_BrioUpdtr
         #- install_Cybertrack
         #- install_Camtasia
@@ -35,7 +35,7 @@
         #- install_psexec
         #- uninstall_Snagit
         #- install_Snagit
-        - install_SAP
+        #- install_SAP
         #- run_haspdinst.exe
         #- run_gpupdate
         #- remove_compass
