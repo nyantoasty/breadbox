@@ -1,0 +1,8 @@
+---
+# tasks file for fix_matplotlib
+
+- name: install matplotlib
+  win_shell: conda install matplotlib
+
+- name: update conda
+  win_shell: conda update --all

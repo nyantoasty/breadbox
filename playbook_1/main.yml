@@ -1,4 +1,4 @@
-- hosts: lab340
+- hosts: SHB-1-15
 
   roles:
         #- fix_technician
@@ -9,25 +9,26 @@
         #- uninstal_veyon
         #- install_anaconda
         #- install_sublime
+        #- fix_matplotlib
         #- fix_Conda
-        #- fix_Numpy_Pandas
-        #- install_veyon
+        #- fix_Numpy_Pandasd
+        - install_veyon
         #- veyon_Master
         #- veyon_faculty
-        #- veyon_loadConfig
-        #- config_BIOS_7050
+        #- veyon_loadConfig #Note: Use '-e "lab=ROOM"' when running to specify which lab master is needed!
+        #- veyon_labConfig
         #- copy_Cybertrack
         #- copy_data
         #- copy_Camtasia
         #- copy_Snagit
-        #- copy_EIT_Shortcut
+        - copy_EIT_Shortcut
         #- copy_compass
         #- install_compass
         #- install_SSMS
         #- copy_Logitech
         #- copy_enc
-        - copy_tests
-        #- install_BrioUpdtr
+        #- copy_tests
+        - install_BrioUpdtr
         #- install_Cybertrack
         #- install_Camtasia
         #- install_LogiCam
@@ -44,7 +45,7 @@
         #- remove_Mendix
         #- remove_psexec
         #- repair_O365
-        #- set_Duplicate
+        - set_Duplicate
         #- copy_install_VMware16
-        #- config_BIOS_All
-        #- run_Dell_CMD_Updt
+        - config_BIOS_All
+        - run_Dell_CMD_Updt

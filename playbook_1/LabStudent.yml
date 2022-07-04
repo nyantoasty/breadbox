@@ -1,0 +1,12 @@
+- hosts: 
+
+  roles:
+
+        - install_veyon
+        - veyon_labConfig
+        - install_compass
+        - copy_tests
+        - install_SSMS
+        - install_SAP
+        - config_BIOS_All
+        - run_Dell_CMD_Updt

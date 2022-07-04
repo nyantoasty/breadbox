@@ -1,0 +1,416 @@
+{
+    "AccessControl": {
+        "AccessRestrictedToUserGroups": "true",
+        "AuthorizedUserGroups": [
+            "CN=Veyon_SHB_Admin,OU=ApplicationPerms,OU=Domain Groups"
+        ],
+        "DomainGroupsEnabled": "true",
+        "UserGroupsBackend": "6f0a491e-c1c6-4338-8244-f823b0bf8670"
+    },
+    "BuiltinDirectory": {
+        "NetworkObjects": {
+            "JsonStoreArray": [
+                {
+                    "Name": "SHB342",
+                    "Type": 2,
+                    "Uid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}"
+                },
+                {
+                    "HostAddress": "SHB-3-60",
+                    "MacAddress": "D8:9E:F3:11:0D:4B",
+                    "Name": "Workstation 01",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{3c2e02e3-2c2c-4588-bec0-9f36a85759d8}"
+                },
+                {
+                    "HostAddress": "SHB-3-61",
+                    "MacAddress": "D8:9E:F3:11:12:6C",
+                    "Name": "Workstation 02",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{c431132e-739f-4e28-8912-8615298efe28}"
+                },
+                {
+                    "HostAddress": "SHB-3-62",
+                    "MacAddress": "D8:9E:F3:11:0A:40",
+                    "Name": "Workstation 03",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{eaaee122-3bd7-4564-8e27-a3c46d39eb3e}"
+                },
+                {
+                    "HostAddress": "SHB-3-63",
+                    "MacAddress": "D8:9E:F3:11:12:63",
+                    "Name": "Workstation 04",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{b17fdcac-f59f-40c5-a908-3a06fea851b8}"
+                },
+                {
+                    "HostAddress": "SHB-3-64",
+                    "MacAddress": "D8:9E:F3:11:0C:23",
+                    "Name": "Workstation 05",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{205dbd79-155b-4784-b999-512f92352164}"
+                },
+                {
+                    "HostAddress": "SHB-3-66",
+                    "MacAddress": "D8:9E:F3:11:15:85",
+                    "Name": "Workstation 06",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{a574d312-6bba-4a74-8123-89feabcb936a}"
+                },
+                {
+                    "HostAddress": "SHB-3-67",
+                    "MacAddress": "D8:9E:F3:11:0C:3C",
+                    "Name": "Workstation 07",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{09f0ba40-ab25-48b9-9b62-ac983130e061}"
+                },
+                {
+                    "HostAddress": "SHB-3-68",
+                    "MacAddress": "D8:9E:F3:11:09:A2",
+                    "Name": "Workstation 08",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{eaa3e86c-cf7b-47f9-9d4a-f931e90f8081}"
+                },
+                {
+                    "HostAddress": "SHB-3-69",
+                    "MacAddress": "D8:9E:F3:11:14:2C",
+                    "Name": "Workstation 09",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{37b3be5d-6465-4aab-86bf-4b49de68f69f}"
+                },
+                {
+                    "HostAddress": "SHB-3-70",
+                    "MacAddress": "D8:9E:F3:11:0B:D5",
+                    "Name": "Workstation 10",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{2dc228d0-717a-4146-9caf-39ece629ab37}"
+                },
+                {
+                    "HostAddress": "SHB-3-71",
+                    "MacAddress": "D8:9E:F3:11:0A:44",
+                    "Name": "Workstation 11",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{9d3070df-9b59-4d90-9c50-47e5e9635f33}"
+                },
+                {
+                    "HostAddress": "SHB-3-72",
+                    "MacAddress": "D8:9E:F3:11:0C:8C",
+                    "Name": "Workstation 12",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{ae568844-b29b-4020-a29f-54b3fea20178}"
+                },
+                {
+                    "HostAddress": "SHB-3-73",
+                    "MacAddress": "D8:9E:F3:11:10:C5",
+                    "Name": "Workstation 13",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{6099ff72-fdf1-4541-9915-1186fce64192}"
+                },
+                {
+                    "HostAddress": "SHB-3-74",
+                    "MacAddress": "D8:9E:F3:11:14:42",
+                    "Name": "Workstation 14",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{17ea3394-a3cb-4834-b5b1-d57b1ce7dc74}"
+                },
+                {
+                    "HostAddress": "SHB-3-75",
+                    "MacAddress": "D8:9E:F3:11:0B:E2",
+                    "Name": "Workstation 15",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{bf4f0c00-7398-4b75-9d29-5c56023c9873}"
+                },
+                {
+                    "HostAddress": "SHB-3-76",
+                    "MacAddress": "D8:9E:F3:11:09:C7",
+                    "Name": "Workstation 16",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{0077fd94-3802-4b8c-adc4-855dec6295d3}"
+                },
+                {
+                    "HostAddress": "SHB-3-77",
+                    "MacAddress": "D8:9E:F3:11:09:AD",
+                    "Name": "Workstation 17",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{f74eb79b-3c8d-4199-821a-f8f0c0815750}"
+                },
+                {
+                    "HostAddress": "SHB-3-78",
+                    "MacAddress": "D8:9E:F3:11:11:1E",
+                    "Name": "Workstation 18",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{92220aff-a1d9-4ee7-986f-f09cb8561265}"
+                },
+                {
+                    "HostAddress": "SHB-3-79",
+                    "MacAddress": "D8:9E:F3:11:0E:E7",
+                    "Name": "Workstation 19",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{c7641f80-8017-4641-9b98-ada1e2f927ce}"
+                },
+                {
+                    "HostAddress": "SHB-3-80",
+                    "MacAddress": "D8:9E:F3:11:0C:9C",
+                    "Name": "Workstation 20",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{58a628f5-5b8c-49b3-900c-bda4ee322318}"
+                },
+                {
+                    "HostAddress": "SHB-3-81",
+                    "MacAddress": "D8:9E:F3:11:0E:F7",
+                    "Name": "Workstation 21",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{3320eeeb-786c-4bf2-a835-6dc00bdec14a}"
+                },
+                {
+                    "HostAddress": "SHB-3-82",
+                    "MacAddress": "D8:9E:F3:11:0C:9B",
+                    "Name": "Workstation 22",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{604d808f-b996-44ee-83cd-46959603cf57}"
+                },
+                {
+                    "HostAddress": "SHB-3-83",
+                    "MacAddress": "D8:9E:F3:11:0D:67",
+                    "Name": "Workstation 23",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{2f3a223d-9c4e-4c4a-8d52-d0aa08f34121}"
+                },
+                {
+                    "HostAddress": "SHB-3-84",
+                    "MacAddress": "D8:9E:F3:11:0D:48",
+                    "Name": "Workstation 24",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{ccb17f41-bc66-4f87-9284-91a3bc81b29b}"
+                },
+                {
+                    "HostAddress": "SHB-3-85",
+                    "MacAddress": "D8:9E:F3:11:0D:5E",
+                    "Name": "Workstation 25",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{103d23c8-4caa-4c95-8e15-0aa683d6216e}"
+                },
+                {
+                    "HostAddress": "SHB-3-86",
+                    "MacAddress": "D8:9E:F3:11:0A:2F",
+                    "Name": "Workstation 26",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{d869b028-4633-48cd-9091-5cdd66597376}"
+                },
+                {
+                    "HostAddress": "SHB-3-87",
+                    "MacAddress": "D8:9E:F3:11:0F:AE",
+                    "Name": "Workstation 27",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{1f83c3b7-b09b-457c-b33d-7dd2a3a72a95}"
+                },
+                {
+                    "HostAddress": "SHB-3-88",
+                    "MacAddress": "D8:9E:F3:11:0B:D0",
+                    "Name": "Workstation 28",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{2979f8ca-595d-4487-84aa-d5cc71fa703b}"
+                },
+                {
+                    "HostAddress": "SHB-3-89",
+                    "MacAddress": "D8:9E:F3:11:0D:70",
+                    "Name": "Workstation 29",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{3f2b8fa8-cc5d-4566-adfd-36cace6376d9}"
+                },
+                {
+                    "HostAddress": "SHB-3-90",
+                    "MacAddress": "D8:9E:F3:11:0C:13",
+                    "Name": "Workstation 30",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{efe08f00-97fb-4956-b623-d9aff7684da8}"
+                },
+                {
+                    "HostAddress": "SHB-3-91",
+                    "MacAddress": "D8:9E:F3:11:0B:DD",
+                    "Name": "Workstation 31",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{92500d70-cd4f-4258-bab7-1719119f5cc4}"
+                },
+                {
+                    "HostAddress": "SHB-3-92",
+                    "MacAddress": "D8:9E:F3:11:09:B9",
+                    "Name": "Workstation 32",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{f7f3b837-b79b-4fd1-8568-1fa7cd9f07aa}"
+                },
+                {
+                    "HostAddress": "SHB-3-93",
+                    "MacAddress": "D8:9E:F3:11:09:1F",
+                    "Name": "Workstation 33",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{a50c6fdb-b4bc-4e0a-8940-3a40b5990a42}"
+                },
+                {
+                    "HostAddress": "SHB-3-94",
+                    "MacAddress": "D8:9E:F3:11:17:56",
+                    "Name": "Workstation 34",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{2490e07a-77cc-4a59-a8c7-5307955a260d}"
+                },
+                {
+                    "HostAddress": "SHB-3-95",
+                    "MacAddress": "D8:9E:F3:11:11:C2",
+                    "Name": "Workstation 35",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{90134a48-c70a-423d-b326-44ded0db93e6}"
+                },
+                {
+                    "HostAddress": "SHB-3-118",
+                    "MacAddress": "D8:9E:F3:11:0A:6A",
+                    "Name": "Workstation 36",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{ad3b153e-5cf1-4c4e-9c8f-30f4f49ccf42}"
+                },
+                {
+                    "HostAddress": "SHB-3-162",
+                    "MacAddress": "D8:9E:F3:11:0C:D2",
+                    "Name": "Workstation #7",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{63b06b6b-4e74-4690-8cee-f3da02612237}"
+                },
+                {
+                    "HostAddress": "SHB-3-163",
+                    "MacAddress": "D8:9E:F3:11:08:E0",
+                    "Name": "Workstation 38",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{faa44b84-7c2b-4ed3-9e81-51498098c4d9}"
+                },
+                {
+                    "HostAddress": "SHB-3-164",
+                    "MacAddress": "D8:9E:F3:11:0C:52",
+                    "Name": "Workstation 39",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{9c61fd6e-12ba-49ec-9e1f-79e3b16ab269}"
+                },
+                {
+                    "HostAddress": "SHB-3-165",
+                    "MacAddress": "D8:9E:F3:11:12:48",
+                    "Name": "Workstation 40",
+                    "ParentUid": "{3d53ef38-1c57-40d5-aaac-4c6777b942af}",
+                    "Type": 3,
+                    "Uid": "{075a76d4-f63b-4618-a46a-dcd61a5e3f93}"
+                }
+            ]
+        }
+    },
+    "Core": {
+        "ApplicationVersion": 5,
+        "InstallationID": "730cff5c-db1c-44e1-b31f-19dd28570f47",
+        "PluginVersions": {
+            "JsonStoreObject": {
+                "{14bacaaa-ebe5-449c-b881-5b382f952571}": "1.1",
+                "{1b08265b-348f-4978-acaa-45d4f6b90bd9}": "1.1",
+                "{1baa01e0-02d6-4494-a766-788f5b225991}": "1.1",
+                "{1bdb0d1c-f8eb-4d21-a093-d555a10f3975}": "1.1",
+                "{2917cdeb-ac13-4099-8715-20368254a367}": "1.1",
+                "{2ad98ccb-e9a5-43ef-8c4c-876ac5efbcb1}": "1.1",
+                "{387a0c43-1355-4ff6-9e1f-d098e9ce5127}": "1.1",
+                "{39d7a07f-94db-4912-aa1a-c4df8aee3879}": "1.1",
+                "{4122e8ca-b617-4e36-b851-8e050ed2d82e}": "1.2",
+                "{4790bad8-4c56-40d5-8361-099a68f0c24b}": "1.1",
+                "{67dfc1c1-8f37-4539-a298-16e74e34fd8b}": "1.1",
+                "{6f0a491e-c1c6-4338-8244-f823b0bf8670}": "1.2",
+                "{80580500-2e59-4297-9e35-e53959b028cd}": "1.2",
+                "{85f6c631-e75a-4c78-8cb2-a7f3f502015a}": "1.1",
+                "{8ae6668b-9c12-4b29-9bfc-ff89f6604164}": "1.1",
+                "{a54ee018-42bf-4569-90c7-0d8470125ccf}": "1.1",
+                "{b47bcae0-24ff-4bf5-869c-484d64af5c4c}": "1.1",
+                "{d4bb9c42-9eef-4ecb-8dd5-dfd84b355481}": "1.0",
+                "{e11bee03-b99c-465c-bf90-7e5339b83f6b}": "1.0",
+                "{ee322521-f4fb-482d-b082-82a79003afa7}": "1.1"
+            }
+        }
+    },
+    "FileTransfer": {
+        "DestinationDirectory": "C:\\Temp\\"
+    },
+    "LDAP": {
+        "BaseDN": "DC=SHSU,DC=EDU",
+        "BindDN": "SidVeyon",
+        "BindPassword": "2b52ad0e062a2c71d7c2be8ac974d666b1d028c267b01f29074aa0e734917687f70efe434d69ea3e442fd6b2b80e6071fc4cb7804ec1868418703488594e94491f8ea347601be6c8e1f6e4c6b3e674e777396414495d863095232d4eafc924c4b063ebd83bab8c6393a2bd8ddad396a8a407f97207e375125f3e442cb2930e4b2dbfa1260f54cc27996b524fece7e622c7371b1b41d50a2cb3438d3c9dc75040c5d990ba4e0830d2e351f46fd797ab8a14192f9a617cb2415598609f37eafc9f5c847a9da04a72f454785acef524ea7f5cfa3bb88cb1450dbb23db3b8dc90bc5596ae5d39462b8d85df956dffde49571de868a663c001b6075192ad40a0c60bf61933e5d46e141840ace8e04df3b17b45308bd117aa5e78fb5f8b5aa9bd76111bfe9d3b7ac4375efc0e9c2172e2511ec4ac61a1cbdbcf85a71f13b427e467ea0688a365db70faacff6047c93c2b6783ce95ea16178cf51deb4b1e42cb6eabca4be43de214da2bae6096f46793880e8255656f3b943d072947359deb6f59de1bd112fb307cb9505c4145f0f13b3c8ceb14cc8cf8d7989cb48ac410678f29f04675daa599f6033e5dbf6e884cf43a51698942e0b217282ba6acf1562c89673f4a7fc8cea960df44fb494d0999841c0665ee4b6b41a0351df1bf95a164ca399d7ad9ec03271c36906db4f181239056705b79e241975e6d0429e302f0662eaa8b701",
+        "ComputerHostNameAttribute": "dnshostname",
+        "ComputerLocationAttribute": "",
+        "ComputerLocationsByAttribute": "false",
+        "ComputerLocationsByContainer": "false",
+        "ComputerTree": "OU=Workstations,OU=Domain Computers",
+        "GroupMemberAttribute": "member",
+        "GroupTree": "OU=ApplicationPerms,OU=Domain Groups",
+        "LocationNameAttribute": "",
+        "QueryNestedUserGroups": "true",
+        "RecursiveSearchOperations": "true",
+        "ServerHost": "ldap.shsu.edu",
+        "UseBindCredentials": "true",
+        "UserGroupsFilter": "(|(cn=Veyon_SHB_Admin)(cn=Veyon_SHB_Admin_Manager))",
+        "UserLoginNameAttribute": "samaccountname",
+        "UserTree": "OU=Faculty-Staff,OU=nonAdmin,OU=Domain Users"
+    },
+    "Master": {
+        "AccessControlForMasterEnabled": "true",
+        "AllowAddingHiddenLocations": "false",
+        "AutoAdjustMonitoringIconSize": "false",
+        "AutoOpenComputerSelectPanel": "false",
+        "AutoSelectCurrentLocation": "false",
+        "ConfirmUnsafeActions": "false",
+        "HideComputerFilter": "false",
+        "HideEmptyLocations": "false",
+        "HideLocalComputer": "false",
+        "ShowCurrentLocationOnly": "false"
+    },
+    "Network": {
+        "FirewallExceptionEnabled": "1",
+        "VeyonServerPort": 11100
+    },
+    "Service": {
+        "FailedAuthenticationNotifications": "true",
+        "RemoteConnectionNotifications": "true"
+    },
+    "Windows": {
+        "LogonConfirmLegalNotice": "true",
+        "SoftwareSASEnabled": "1"
+    }
+}

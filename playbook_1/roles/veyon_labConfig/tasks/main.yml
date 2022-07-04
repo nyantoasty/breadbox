@@ -1,0 +1,22 @@
+---
+# tasks file for veyon_labConfig
+
+- name: Hiding tray icon...
+  win_command: .\veyon-cli config set Service/HideTrayIcon true
+  args:
+    chdir: C:\Progra~1\Veyon
+
+- name: Suppressing remote view alert...
+  win_command: .\veyon-cli config set Service/RemoteConnectionNotifications false
+  args:
+    chdir: C:\Progra~1\Veyon
+
+- name: Suppressing remote connection failure...
+  win_command: .\veyon-cli config set Service/FailedAuthenticationNotifications false
+  args:
+    chdir: C:\Progra~1\Veyon
+
+- name: restart Veyon service
+  win_command: .\veyon-cli.exe service restart
+  args:
+    chdir: C:\Progra~1\Veyon

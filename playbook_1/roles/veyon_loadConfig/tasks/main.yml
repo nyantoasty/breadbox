@@ -1,13 +1,18 @@
 ---
-# tasks file for veyon_loadConfig
+# tasks file for veyon_loadConfig; this is for the Podium computer
+#Note: There are multiple lab masters to be chosen from, ensure that the correct one is transferred!
+
+
+- debug:
+    msg: Importing "labmaster-SHB{{ lab }}.json"
 
 - name: Copy config to C:\Temp (results in C:\Temp\ansbl_copy)
   win_copy:
-    src: labmaster.json
+    src: "labmaster-SHB{{ lab }}.json"
     dest: C:\Temp\ansbl_copy\
 
 - name: load config file for veyon lab master
-  win_command: .\veyon-cli.exe config import "C:\Temp\ansbl_copy\labmaster.json"
+  win_command: .\veyon-cli.exe config import "C:\Temp\ansbl_copy\labmaster-SHB{{ lab }}.json"
   args:
     chdir: C:\Progra~1\Veyon
 

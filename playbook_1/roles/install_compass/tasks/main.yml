@@ -7,7 +7,9 @@
     dest: C:\Temp\ansbl_copy\
 
 - name: runs Compass installer
-  win_shell: 'C:\temp\ansbl_copy\Compass_Setup.exe /Silent Path="C:\Certiport\Compass" /UpdateSchedule Weekly /UpdateTime 00:30'
+  win_command: '.\Compass_Setup.exe /Silent Path="C:\Certiport\Compass" /UpdateSchedule Weekly /UpdateTime 00:30'
+  args:
+    chdir: C:\temp\ansbl_copy\
 
 - name: Copy .enc to appropriate Compass folder
   win_copy:
