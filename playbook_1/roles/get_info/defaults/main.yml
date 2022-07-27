@@ -1,9 +1,2 @@
 ---
 # defaults file for get_info
-
-- name: Get disk facts
-   win_disk_facts:
-
-- name: Results
-   debug:
-    msg: Memory in system {{ ansible_facts['memtotal_mb'] }} Mb | Size of the 1st disk {{ ansible_facts.disks[0].size|filesizeformat(true) }}

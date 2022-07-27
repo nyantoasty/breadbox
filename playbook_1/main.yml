@@ -1,9 +1,10 @@
-- hosts: SHB-1-15
+- hosts: SHB-3-222
 
   roles:
         #- fix_technician
         #- choco_Update
         #- get_BIOS
+        - get_info
         #- get_MAC
         #- set_BIOSpwdDELL
         #- uninstal_veyon
@@ -12,7 +13,7 @@
         #- fix_matplotlib
         #- fix_Conda
         #- fix_Numpy_Pandasd
-        - install_veyon
+        #- install_veyon
         #- veyon_Master
         #- veyon_faculty
         #- veyon_loadConfig #Note: Use '-e "lab=ROOM"' when running to specify which lab master is needed!
@@ -21,14 +22,14 @@
         #- copy_data
         #- copy_Camtasia
         #- copy_Snagit
-        - copy_EIT_Shortcut
+        #- copy_EIT_Shortcut
         #- copy_compass
         #- install_compass
         #- install_SSMS
         #- copy_Logitech
         #- copy_enc
         #- copy_tests
-        - install_BrioUpdtr
+        #- install_BrioUpdtr
         #- install_Cybertrack
         #- install_Camtasia
         #- install_LogiCam
@@ -45,7 +46,7 @@
         #- remove_Mendix
         #- remove_psexec
         #- repair_O365
-        - set_Duplicate
+        #- set_Duplicate
         #- copy_install_VMware16
-        - config_BIOS_All
-        - run_Dell_CMD_Updt
+        #- config_BIOS_All
+        #- run_Dell_CMD_Updt
