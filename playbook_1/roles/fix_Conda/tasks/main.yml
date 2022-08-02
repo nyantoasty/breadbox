@@ -1,0 +1,34 @@
+---
+# tasks file for fix_Conda
+
+- name: Copy dlls for Conda 1
+  win_copy:
+    src: C:\tools\Anaconda3\Library\bin\libcrypto-1_1-x64.dll
+    dest: C:\tools\Anaconda3\DLLs\
+    remote_src: yes
+
+- name: Copy dlls for Conda 2
+  win_copy:
+    src: C:\tools\Anaconda3\Library\bin\libssl-1_1-x64.dll
+    dest: C:\tools\Anaconda3\DLLs\
+    remote_src: yes
+
+- name: update Conda
+  win_shell: ./conda.exe update conda
+  args:
+    chdir: C:\tools\Anaconda3\Scripts
+
+- name: init Conda
+  win_shell: ./conda.exe init powershell
+  args:
+    chdir: C:\tools\Anaconda3\Scripts
+
+- name: remove Numpy
+  win_shell: ./conda.exe remove Numpy
+  args:
+    chdir: C:\tools\Anaconda3\Scripts
+
+- name: install Pandas
+  win_shell: ./conda.exe install pandas
+  args:
+    chdir: C:\tools\Anaconda3\Scripts

@@ -3,11 +3,11 @@
 
 - name: Copy folder to C:\Temp (results in C:\Temp\ansbl_copy)
   win_copy:
-    src: OptiPlex7050_GNGFRP2_x64.exe
+    src: OptiPlex_7060_83P18X2_x64.exe
     dest: C:\Temp\ansbl_copy\
 
 - name: run BIOS config
-  win_command: OptiPlex7050_GNGFRP2_x64.exe
+  win_command: OptiPlex_7060_83P18X2_x64.exe
   args:
     chdir: C:\Temp\ansbl_copy\
-  ignore_errors: yes
+  ignore_errors: true

@@ -1,13 +1,16 @@
 [all:vars]
 ansible_connection=winrm
 ansible_winrm_transport=ntlm
+ansible_winrm_operation_timeout_sec=120
+ansible_winrm_read_timeout_sec=130
 ansible_port=5985
 
-[failed]
-SHB-1-84
-SHB-1-63
-SHB-1-71
-SHB-1-76
+[fix340]
+SHB-3-114
+SHB-3-159
+SHB-3-161
+SHB-3-45
+SHB-3-55
 
 [TWC]
 D145540

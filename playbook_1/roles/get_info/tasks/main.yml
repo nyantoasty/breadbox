@@ -1,2 +1,42 @@
 ---
 # tasks file for get_info
+  
+- name: get_MAC
+  win_shell: Get-NetAdapter | where {$_.Status  -match 'Up'} | Select-Object -ExpandProperty macaddress 
+  register: resultMAC
+
+- name: get_model
+  win_command: wmic csproduct get name
+  register: model
+
+- name: get_host
+  win_command: hostname
+  register: name
+
+#- name: get_memory
+#  win_shell: "Get-CimInstance -Class Win32_PhysicalMemory | Foreach-Object { [PSCustomObject] @ {CapacityGB = $_.Capacity /1GB DeviceLocator =$_.DeviceLocator }}"
+
+- name: get_desc
+  raw: "Get-ADComputer -Identity {{inventory_hostname}} -Properties * | Select-Object Description"
+  register: ad_desc
+  delegate_to: 127.0.0.1
+
+#- name: get_OS
+#  win_shell: (get-ciminstance -class win32_operatingsystem).caption
+#  register: resultOS
+
+#- name: get_release
+#  win_shell: (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").ReleaseId
+#  register: resultVER
+
+#- name: append to csv
+#  lineinfile:
+#      line: "{{ inventory_hostname }},{{ model.stdout | regex_replace ('Name', '') | trim }},{{resultMAC.stdout | regex_replace('\r', '') | trim }}, {{ ad_desc.stdout | regex_replace ('Description','') | trim}}"
+#      insertafter: EOF
+#      dest:  /home/toasty/git/breadbox/playbook_1/roles/get_MAC/files/classroom_macs.csv
+#  delegate_to: 127.0.0.1
+
+- name: print host information
+  ansible.builtin.debug:  
+    msg: "{{ inventory_hostname }}, {{ model.stdout | regex_replace ('Name', '') | trim }}, {{resultMAC.stdout | regex_replace('\r', '') | trim }}, {{ ad_desc.stdout | regex_replace ('Description','') | trim}}"
+    #, {{ resultOS.stdout | regex_replace('\r\n', '') | trim }}, {{ resultVER.stdout | regex_replace('\r\n', '') | trim }}."

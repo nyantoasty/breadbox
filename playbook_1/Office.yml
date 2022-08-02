@@ -1,0 +1,8 @@
+- hosts: 
+
+  roles:
+
+        - install_veyon
+        - veyon_faculty
+        - config_BIOS_All
+        - run_Dell_CMD_Updt

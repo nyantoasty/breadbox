@@ -1,0 +1,15 @@
+- hosts: 
+
+  roles:
+
+        - install_veyon
+        - veyon_Master
+        - copy_EIT_Shortcut
+        - install_BrioUpdtr
+        - install_compass
+        - copy_tests
+        - install_SAP
+        - set_Duplicate
+        - config_BIOS_All
+        - run_Dell_CMD_Updt
+        - veyon_loadConfig #Note: Use '-e "lab=ROOM"' when running to specify which lab master is needed!

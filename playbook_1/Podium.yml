@@ -1,0 +1,11 @@
+- hosts: SHB-1-15
+
+  roles:
+
+        - install_veyon
+        - veyon_faculty
+        - copy_EIT_Shortcut
+        - install_BrioUpdtr
+        - set_Duplicate
+        - config_BIOS_All
+        - run_Dell_CMD_Updt
